@@ -1,0 +1,40 @@
+/**
+*
+* Spares uikit v1.0 2017
+* Author Dmitri Korchemkin
+*/
+
+.spares-header {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 10px 0 0 0;
+
+  color: #333;
+  background: none;
+
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: 400;
+
+  border: 0;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+h1.spares-header {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+h2.spares-header {
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+}
+
+h3.spares-header {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}

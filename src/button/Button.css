@@ -1,0 +1,82 @@
+/**
+*
+* Spares uikit v1.0 2017
+* Author Dmitri Korchemkin
+*/
+
+.spares-button {
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+
+  margin: 0 .25em 0 0;
+  padding: 10px 20px;
+
+  background: #f4f4f4;
+  background: linear-gradient(to bottom,#fafafa,#f6f6f6,#f3f3f3);
+  color: #666;
+
+  border: 1px solid #eaeaea;
+  border-bottom-color: #cdcdcd;
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 4px;
+
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 400;
+
+  cursor: pointer;
+  outline: none;
+  transition: all .3s ease;
+}
+
+.spares-button:active {
+  transform: scale(0.9, 0.9);
+}
+
+.spares-button:disabled {
+  cursor: not-allowed;
+
+  background: #ddd;
+  color: #707070;
+
+  opacity: .8;
+}
+
+.spares-button.primary {
+  background: #086e80;
+  background: linear-gradient(to bottom,#097487,#096f81,#08697a);
+  color: #fefeff;
+
+  border: 0;
+  border-top: 1px solid #4897a6;
+  border-bottom: 1px solid #054551;
+}
+
+.spares-button.primary:disabled {
+  background: #086e80;
+  background: linear-gradient(to bottom,#097487,#096f81,#08697a);
+
+  opacity: .7;
+}
+
+
+.spares-button.danger {
+  background: #dc4839;
+  background: linear-gradient(to bottom,#e64c3c,#db4839,#d04536);
+  color: #fefeff;
+
+  border: 0;
+  border-top: 1px solid #ed7a6e;
+  border-bottom: 1px solid #8b2d24;
+}
+
+.spares-button.danger:disabled {
+  background: #dc4839;
+  background: linear-gradient(to bottom,#e64c3c,#db4839,#d04536);
+
+  opacity: .7;
+}

@@ -1,0 +1,38 @@
+/**
+*
+* Spares uikit v1.0 2017
+* Author Dmitri Korchemkin
+*/
+
+.spares-list,
+.spares-list-item {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  color: #333;
+  background: none;
+}
+
+.spares-list-item  {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.spares-list-unit {
+  margin-right: 25px;
+}
+
+.spares-list-label {
+  color: #999;
+  padding-right: 10px;
+}
