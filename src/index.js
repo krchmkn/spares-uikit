@@ -11,22 +11,6 @@ import ButtonsTwins from './buttons_twins/ButtonsTwins'
 import InputField from './input_field/InputField'
 import TextField from './text_field/TextField'
 
-/*
-* TODO
-* panel for list
-* textarea
-* select
-* checkbox
-* radio
-* icon button
-* card
-
-* modal
-* table
-* datepicker
-* chart
-*/
-
 const listItems = [
   {
     name: 'Item1',
