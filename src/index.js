@@ -86,16 +86,9 @@ ReactDOM.render(
     <Block>
       <Header small>List 1</Header>
       <List items={listItems} template={[
-        {
-          label: 'name',
-          key: 'name'
-        }, {
-          label: 'description',
-          key: 'description'
-        }, {
-          label: 'address',
-          key: 'address'
-        }
+        [ {label: 'name', key: 'name'}, {label: 'name1', key: 'name'} ],
+        [ {label: 'description', key: 'description'} ],
+        [ {label: 'address', key: 'address'} ]
       ]}/>
     </Block>
 
