@@ -185,8 +185,9 @@ ReactDOM.render(
         <InputField
               label="Input field"
               name="name"
-              placeholder="input"
-              onchange={testFunc.bind(null, 'input')} />
+              placeholder="input digits"
+              pattern={/^\d+$/}
+              message="Only digits"/>
     </Block>
 
     <hr />
