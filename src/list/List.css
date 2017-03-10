@@ -34,6 +34,10 @@
   border-bottom: 1px solid #ebebeb;
 }
 
+.spares-list-item:last-child {
+  border: 0;
+}
+
 .spares-list-unit {
   margin-right: 40px;
 }

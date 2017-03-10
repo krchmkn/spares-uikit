@@ -27,6 +27,10 @@
   border-bottom: 1px solid #ebebeb;
 }
 
+.spares-list-with-image-item:last-child {
+  border: 0;
+}
+
 .spares-list-with-image-header,
 a.spares-list-with-image-header {
   font-size: 19px;

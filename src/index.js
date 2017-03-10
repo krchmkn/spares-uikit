@@ -64,8 +64,10 @@ let testFunc = function (name) {
 ReactDOM.render(
   <div>
     <Block>
-      <Header>Spares uikit</Header>
+      <Header center>Spares uikit</Header>
     </Block>
+
+    <hr />
 
     <Block>I'm a block</Block>
     <Block flex>
@@ -73,6 +75,8 @@ ReactDOM.render(
       <div>flex</div>
       <div>block</div>
     </Block>
+
+    <hr />
 
     <Block>
       <Header medium>Buttons</Header>
@@ -83,6 +87,8 @@ ReactDOM.render(
       <Button color="danger">Click me</Button>
     </Block>
 
+    <hr />
+
     <Block>
       <Header medium>Disabled buttons</Header>
     </Block>
@@ -92,6 +98,7 @@ ReactDOM.render(
       <Button color="danger" disabled>Click me</Button>
     </Block>
 
+    <hr />
 
     <Block>
       <Header medium>Buttons twins</Header>
@@ -108,14 +115,19 @@ ReactDOM.render(
       ]}/>
     </Block>
 
+    <hr />
+
     <Block>
       <Header medium>Headers</Header>
     </Block>
     <Block>
       <Header>h1 header</Header>
+      <Header center>h1 header, text align center</Header>
       <Header medium>h2 header</Header>
       <Header small>h3 header</Header>
     </Block>
+
+    <hr />
 
     <Block>
       <Header medium>Paragraph</Header>
@@ -129,6 +141,8 @@ ReactDOM.render(
         </Paragraph>
     </Block>
 
+    <hr />
+
     <Block>
       <Header medium>Lists</Header>
     </Block>
@@ -140,6 +154,8 @@ ReactDOM.render(
         [ {label: 'address', key: 'address'} ]
       ]}/>
     </Block>
+
+    <hr />
 
     <Block>
       <Header small>List with image</Header>
@@ -156,6 +172,8 @@ ReactDOM.render(
         ]
       }}/>
     </Block>
+
+    <hr />
 
   </div>,
   document.getElementById('root')

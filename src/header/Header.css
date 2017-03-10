@@ -25,6 +25,10 @@
   box-shadow: none;
 }
 
+.spares-header.center {
+  text-align: center;
+}
+
 h1.spares-header {
   font-size: 2rem;
   margin-bottom: 35px;

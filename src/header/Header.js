@@ -9,12 +9,20 @@ import './Header.css';
 
 class Header extends Component {
   render() {
-    let header = <h1 className="spares-header">{this.props.children}</h1>;
+    let inputProps = {
+      className: 'spares-header'
+    };
+
+    if (this.props.center) {
+      inputProps.className += ' center';
+    }
+
+    let header = <h1 {...inputProps}>{this.props.children}</h1>;
 
     if (this.props.medium) {
-      header = <h2 className="spares-header">{this.props.children}</h2>;
+      header = <h2 {...inputProps}>{this.props.children}</h2>;
     } else if (this.props.small) {
-      header = <h3 className="spares-header">{this.props.children}</h3>;
+      header = <h3 {...inputProps}>{this.props.children}</h3>;
     }
 
     return header;
