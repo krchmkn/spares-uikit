@@ -6,6 +6,25 @@ import Button from './button/Button';
 import Header from './header/Header';
 import List from './list/List';
 
+
+/*
+* TODO
+* list with image
+* panel for list
+* input
+* textarea
+* select
+* checkbox
+* radio
+* tabs buttons
+* icon button
+* card
+* table
+* datepicker
+* chart
+* wrap block
+*/
+
 const listItems = [
   {
     name: 'Item1',
