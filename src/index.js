@@ -9,11 +9,11 @@ import ListWithImage from './list_with_image/ListWithImage';
 import Paragraph from './paragraph/Paragraph';
 import ButtonsTwins from './buttons_twins/ButtonsTwins'
 import InputField from './input_field/InputField'
+import TextField from './text_field/TextField'
 
 /*
 * TODO
 * panel for list
-* input
 * textarea
 * select
 * checkbox
@@ -187,10 +187,25 @@ ReactDOM.render(
               name="name"
               placeholder="input digits"
               pattern={/^\d+$/}
-              message="Only digits"/>
+              message="Only digits" />
     </Block>
 
     <hr />
+
+    <Block>
+      <Header medium>Text field</Header>
+    </Block>
+    <Block>
+        <TextField
+            label="Enter text"
+            name="name"
+            placeholder="Enter 150 characters"
+            char_count={150}
+            message="Enter 150 characters" />
+    </Block>
+
+    <hr />
+
 
   </div>,
   document.getElementById('root')
