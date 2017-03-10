@@ -8,6 +8,7 @@ import List from './list/List';
 import ListWithImage from './list_with_image/ListWithImage';
 import Paragraph from './paragraph/Paragraph';
 import ButtonsTwins from './buttons_twins/ButtonsTwins'
+import InputField from './input_field/InputField'
 
 /*
 * TODO
@@ -19,8 +20,9 @@ import ButtonsTwins from './buttons_twins/ButtonsTwins'
 * radio
 * icon button
 * card
-* table
 
+* modal
+* table
 * datepicker
 * chart
 */
@@ -57,7 +59,7 @@ const listWithImageItems = [
   }
 ];
 
-let testFunc = function (name) {
+const testFunc = function (name) {
   console.log(name);
 };
 
@@ -83,6 +85,7 @@ ReactDOM.render(
     </Block>
     <Block>
       <Button>Click me</Button>
+      <Button submit>Submit button</Button>
       <Button color="primary">Click me</Button>
       <Button color="danger">Click me</Button>
     </Block>
@@ -171,6 +174,19 @@ ReactDOM.render(
           {label: 'second line2', key: 'label2'}
         ]
       }}/>
+    </Block>
+
+    <hr />
+
+    <Block>
+      <Header medium>Input field</Header>
+    </Block>
+    <Block>
+        <InputField
+              label="Input field"
+              name="name"
+              placeholder="input"
+              onchange={testFunc.bind(null, 'input')} />
     </Block>
 
     <hr />

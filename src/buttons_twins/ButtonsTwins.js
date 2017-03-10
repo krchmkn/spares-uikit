@@ -76,7 +76,7 @@ class ButtonsTwins extends Component {
 }
 
 ButtonsTwins.propTypes = {
-  items: React.PropTypes.array
+  items: React.PropTypes.array.isRequired
 };
 
 export default ButtonsTwins;

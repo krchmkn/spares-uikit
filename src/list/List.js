@@ -68,8 +68,8 @@ class List extends Component {
 }
 
 List.propTypes = {
-  items: React.PropTypes.array,
-  template: React.PropTypes.array
+  items: React.PropTypes.array.isRequired,
+  template: React.PropTypes.array.isRequired
 };
 
 export default List;

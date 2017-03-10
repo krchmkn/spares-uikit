@@ -27,4 +27,11 @@ class Button extends Component {
   }
 }
 
+Button.propTypes = {
+  color: React.PropTypes.string,
+  submit: React.PropTypes.bool,
+  disabled: React.PropTypes.bool
+}
+
+
 export default Button;

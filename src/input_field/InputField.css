@@ -1,0 +1,17 @@
+.spares-input-block {
+  position: relative;
+}
+
+.spares-input-label {
+  display: block;
+  width: 100%;
+}
+
+.spares-input {
+  display: block;
+  width: 100%;
+}
+
+.spares-input-error {
+  
+}

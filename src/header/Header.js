@@ -29,4 +29,10 @@ class Header extends Component {
   }
 }
 
+Header.propTypes = {
+  center: React.PropTypes.bool,
+  medium: React.PropTypes.bool,
+  small: React.PropTypes.bool
+};
+
 export default Header;

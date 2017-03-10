@@ -115,8 +115,8 @@ class ListWithImage extends Component {
 }
 
 ListWithImage.propTypes = {
-  items: React.PropTypes.array,
-  template: React.PropTypes.object
+  items: React.PropTypes.array.isRequired,
+  template: React.PropTypes.object.isRequired
 };
 
 

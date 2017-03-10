@@ -26,4 +26,8 @@ class Block extends Component {
   }
 }
 
+Block.propTypes = {
+  flex: React.PropTypes.bool
+}
+
 export default Block;
