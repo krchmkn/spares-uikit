@@ -70,8 +70,8 @@ class ListWithImage extends Component {
 
   render() {
 
-    let items = this.props.items || [];
-    let template = this.props.template || {};
+    let items = this.props.items;
+    let template = this.props.template;
 
     this.checkTemplate(template);
 

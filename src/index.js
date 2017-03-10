@@ -7,7 +7,7 @@ import Header from './header/Header';
 import List from './list/List';
 import ListWithImage from './list_with_image/ListWithImage';
 import Paragraph from './paragraph/Paragraph';
-
+import ButtonsTwins from './buttons_twins/ButtonsTwins'
 
 /*
 * TODO
@@ -17,13 +17,12 @@ import Paragraph from './paragraph/Paragraph';
 * select
 * checkbox
 * radio
-* tabs buttons
 * icon button
 * card
 * table
+
 * datepicker
 * chart
-* wrap block
 */
 
 const listItems = [
@@ -58,19 +57,21 @@ const listWithImageItems = [
   }
 ];
 
+let testFunc = function (name) {
+  console.log(name);
+};
+
 ReactDOM.render(
   <div>
     <Block>
       <Header>Spares uikit</Header>
     </Block>
 
-    <Block>
-      <Block>I'm a block</Block>
-      <Block flex>
-        <div>I'm a </div>
-        <div>flex</div>
-        <div>block</div>
-      </Block>
+    <Block>I'm a block</Block>
+    <Block flex>
+      <div>I'm a </div>
+      <div>flex</div>
+      <div>block</div>
     </Block>
 
     <Block>
@@ -89,6 +90,22 @@ ReactDOM.render(
       <Button disabled>Click me</Button>
       <Button color="primary" disabled>Click me</Button>
       <Button color="danger" disabled>Click me</Button>
+    </Block>
+
+
+    <Block>
+      <Header medium>Buttons twins</Header>
+    </Block>
+    <Block>
+      <ButtonsTwins items={[
+        {
+          text: 'Button1',
+          onclick: testFunc.bind(null, 'name1')
+        }, {
+          text: 'Button2',
+          onclick: testFunc.bind(null, 'name2')
+        }
+      ]}/>
     </Block>
 
     <Block>

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ListWithImage from './ListWithImage';
+import ButtonsTwins from './ButtonsTwins';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<ListWithImage />, div);
+  ReactDOM.render(<ButtonsTwins />, div);
 });

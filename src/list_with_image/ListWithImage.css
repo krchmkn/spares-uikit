@@ -77,3 +77,10 @@ a.spares-list-with-image-header {
   padding: 0;
   line-height: 25px;
 }
+
+@media(max-width: 980px) {
+  .spares-list-with-image-unit.big,
+  .spares-list-with-image-unit.small {
+    width: 100%;
+  }
+}
