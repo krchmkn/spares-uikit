@@ -34,25 +34,21 @@ class ButtonsTwins extends Component {
         text: 'And me',
         onclick: bar.bind(null, 'bar')
       }];\n`;
-    if (typeof items === 'object') {
-      if (items.length != null) {
-        for (let item of items) {
-          if (typeof items === 'object') {
-            if (typeof item.text !== 'string') {
-              throw new Error(message);
-            } else if (typeof item.onclick !== 'function') {
-              throw new Error(message);
-            }
-          } else {
-            throw new Error(message);
-          }
-        }
-      } else {
-        throw new Error(message);
-      }
-    } else {
+
+    if (typeof items !== 'object'
+        || items.length == null
+        || items.length <= 0) {
       throw new Error(message);
+    } else {
+      for (let item of items) {
+        if (typeof item !== 'object'
+            || typeof item.text !== 'string'
+            || typeof item.onclick !== 'function') {
+          throw new Error(message);
+        }
+      }
     }
+
   }
 
   render() {

@@ -12,7 +12,6 @@ class ListWithImage extends Component {
   checkTemplate(template) {
     let message = `Spares uikit:
     <ListWithImage /> component template should be an object.
-    Object properties should be a strings.
     'template.labels' should be an array of objects.
     Value in 'labels.key' should be the key in items={}
     Example:
@@ -35,20 +34,8 @@ class ListWithImage extends Component {
       if (tmpl) {
         switch (tmpl) {
           case 'header':
-            if (typeof template[tmpl] !== 'string') {
-              throw new Error(message);
-            }
-            break;
           case 'pageLink':
-            if (typeof template[tmpl] !== 'string') {
-              throw new Error(message);
-            }
-            break;
           case 'image':
-            if (typeof template[tmpl] !== 'string') {
-              throw new Error(message);
-            }
-            break;
           case 'description':
             if (typeof template[tmpl] !== 'string') {
               throw new Error(message);

@@ -12,7 +12,7 @@ class List extends Component {
   checkTemplate(template) {
     let message = `Spares uikit: <List /> component template should be an array of items.
     Item in array should be an array of objects. Object should have keys: 'label' and 'key'.
-    Values of keys should be a strings. Value in 'key' should be the key in items={}.
+    'Object.key' should be the key in items={}.
     Example:
     [
       [ { label: 'My name is', key: 'first_name' }, { label: 'My surname is', key: 'second_name' } ],
@@ -20,22 +20,10 @@ class List extends Component {
     ]\n`;
 
     for (let tmpl of template) {
-      if (typeof tmpl !== 'object') {
+      if (typeof tmpl !== 'object'
+          || tmpl.length == null
+          || tmpl.length === 0) {
         throw new Error(message);
-      } else {
-        if (tmpl.length == null || tmpl.length === 0) {
-          throw new Error(message);
-        } else {
-          for (let t of tmpl) {
-            if (typeof t.label === 'object') {
-              throw new Error(message);
-            } else if (typeof t.key === 'object') {
-              throw new Error(message);
-            } else {
-              return true;
-            }
-          }
-        }
       }
     }
   }

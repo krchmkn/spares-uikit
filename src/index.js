@@ -10,6 +10,7 @@ import Paragraph from './paragraph/Paragraph';
 import ButtonsTwins from './buttons_twins/ButtonsTwins'
 import InputField from './input_field/InputField'
 import TextField from './text_field/TextField'
+import SelectField from './select_field/SelectField'
 
 const listItems = [
   {
@@ -190,6 +191,22 @@ ReactDOM.render(
 
     <hr />
 
+    <Block>
+      <Header medium>Select</Header>
+    </Block>
+    <Block>
+        <SelectField
+            label="Select"
+            name="select_name"
+            onchange={testFunc.bind(null, 'select1')}
+            items={[
+              {value: 'value1', text: 'value 1'},
+              {value: 2, text: 2},
+              {value: 'value3', text: 'value 3'}
+            ]} />
+    </Block>
+
+    <hr />
 
   </div>,
   document.getElementById('root')

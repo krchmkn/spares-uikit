@@ -3,6 +3,10 @@ html, body {
   padding: 0;
 }
 
+body {
+  padding-bottom: 150px;
+}
+
 hr {
   border: none;
   color: #eee;
