@@ -53,7 +53,7 @@ class List extends Component {
             {template.map((val, indx) =>
               <div key={indx} className="spares-list-unit">
                 {val.map((v, i) =>
-                  <div key={i}>
+                  <div key={i} className="spares-list-unit-row">
                     <span className="spares-list-label">{v.label}: </span>
                     <span>{item[v.key]}</span>
                   </div>

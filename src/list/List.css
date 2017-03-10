@@ -16,20 +16,30 @@
 
   color: #333;
   background: none;
+
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: 400;
 }
 
 .spares-list-item  {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 
-  padding: 10px;
+  padding: 10px 0;
   border-bottom: 1px solid #ebebeb;
 }
 
 .spares-list-unit {
-  margin-right: 25px;
+  margin-right: 40px;
+}
+
+.spares-list-unit-row {
+  margin-bottom: 10px;
 }
 
 .spares-list-label {
