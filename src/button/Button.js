@@ -12,7 +12,8 @@ class Button extends Component {
     let inputProps = {
       type: (this.props.submit ? 'submit' : 'button'),
       className: (this.props.color ?
-        'spares-button ' +  this.props.color : 'spares-button')
+        'spares-button ' +  this.props.color : 'spares-button'),
+      onClick: this.props.onclick
     };
 
     if (this.props.disabled) {
@@ -30,6 +31,7 @@ class Button extends Component {
 Button.propTypes = {
   color: React.PropTypes.string,
   submit: React.PropTypes.bool,
+  onclick: React.PropTypes.func,
   disabled: React.PropTypes.bool
 }
 

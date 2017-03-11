@@ -69,7 +69,7 @@ ReactDOM.render(
       <Header medium>Buttons</Header>
     </Block>
     <Block>
-      <Button>Click me</Button>
+      <Button onclick={testFunc.bind(null, 'click')}>Click me</Button>
       <Button submit>Submit button</Button>
       <Button color="primary">Click me</Button>
       <Button color="danger">Click me</Button>

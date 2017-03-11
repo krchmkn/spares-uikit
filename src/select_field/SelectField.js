@@ -32,6 +32,18 @@ class SelectField extends Component {
 
   }
 
+  checkAppearance() {
+    let property = 'appearance';
+    if (property
+            || ('-webkit-' + property)
+            || ('-moz-' + property)
+            || ('-ms-' + property) in document.body.style) {
+        return true;
+    } else {
+        return false;
+    }
+  }
+
   render() {
     let inputProps = {
       className: 'spares-select',
@@ -41,14 +53,21 @@ class SelectField extends Component {
 
     this.checkItems(this.props.items);
 
+    let spares_custom_select = null;
+    if (this.checkAppearance()) {
+      spares_custom_select = 'spares_custom_select';
+    }
+
     return (
         <div className="spares-select-block">
           <label className="spares-select-label">{this.props.label}</label>
-          <select {...inputProps}>
-            {this.props.items.map((item, index) =>
-              <option key={index} value={item.value}>{item.text}</option>
-            )}
-          </select>
+          <label className={spares_custom_select}>
+            <select {...inputProps}>
+              {this.props.items.map((item, index) =>
+                <option key={index} value={item.value}>{item.text}</option>
+              )}
+            </select>
+          </label>
         </div>
     );
   }
