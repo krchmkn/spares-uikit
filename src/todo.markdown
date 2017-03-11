@@ -1,6 +1,5 @@
 ## TODO
 
-- select
 - checkbox
 - radio
 - icon button
