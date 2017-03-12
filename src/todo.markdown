@@ -1,7 +1,6 @@
 ## TODO
 
 - checkbox
-- radio
 - icon button
 - card
 - panel for list

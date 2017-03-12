@@ -11,17 +11,20 @@ import ButtonsTwins from './buttons_twins/ButtonsTwins'
 import InputField from './input_field/InputField'
 import TextField from './text_field/TextField'
 import SelectField from './select_field/SelectField'
+import Radio from './radio/Radio'
 
 const listItems = [
   {
+    id: 1,
     name: 'Item1',
     description: 'Lorem ipsum1',
     address: 'address1'
   },
   {
-    name: 'Item1',
-    description: 'Lorem ipsum1',
-    address: 'address1'
+    id: 2,
+    name: 'Item2',
+    description: 'Lorem ipsum2',
+    address: 'address2'
   }
 ];
 
@@ -204,6 +207,20 @@ ReactDOM.render(
               {value: 2, text: 2},
               {value: 'value3', text: 'value 3'}
             ]} />
+    </Block>
+
+    <hr />
+
+    <Block>
+      <Header medium>Radio buttons</Header>
+    </Block>
+    <Block>
+        <Radio items={listItems}
+              template={{
+                name: 'test',
+                value: 'name',
+                text: 'address'
+              }} />
     </Block>
 
     <hr />
