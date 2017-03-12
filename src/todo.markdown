@@ -1,10 +1,10 @@
 ## TODO
 
-- checkbox
-- icon button
+- dropdown
 - card
-- panel for list
+- nav
 - modal
+- icon button
 - table
 - datepicker
-- chart
+- graph

@@ -1,5 +1,5 @@
-.spares-radio-block,
-.spares-radio-label {
+.spares-checkbox-block,
+.spares-checkbox-label {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -16,19 +16,19 @@
   margin: 0;
 }
 
-.spares-radio-label {
+.spares-checkbox-label {
   margin-bottom: 10px;
 }
 
-.spares-radio-label:active {
+.spares-checkbox-label:active {
   color: #1b7f8f;
 }
 
-.spares-radio {
+.spares-checkbox {
   margin-right: 10px;
 }
 
-.spares-radio:focus,
-.spares-radio:active {
+.spares-checkbox:focus,
+.spares-checkbox:active {
   outline: none;
 }

@@ -5,19 +5,19 @@
 */
 
 import React, { Component } from 'react';
-import './Radio.css';
+import './Checkbox.css';
 
-class Radio extends Component {
+class Checkbox extends Component {
   render() {
     let inputProps = {
-      className: 'spares-radio',
-      type: 'radio'
+      className: 'spares-checkbox',
+      type: 'checkbox'
     };
 
     return (
-        <div className="spares-radio-block">
+        <div className="spares-checkbox-block">
           {this.props.items.map((item, index) =>
-            <label key={index} className="spares-radio-label">
+            <label key={index} className="spares-checkbox-label">
             <input {...inputProps}
                   name={this.props.template.name}
                   value={item[this.props.template.keysInItems.value]} />
@@ -29,10 +29,10 @@ class Radio extends Component {
   }
 }
 
-Radio.propTypes = {
+Checkbox.propTypes = {
   items: React.PropTypes.array.isRequired,
   template: React.PropTypes.object.isRequired
 };
 
 
-export default Radio;
+export default Checkbox;

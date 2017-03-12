@@ -7,11 +7,13 @@ import Header from './header/Header';
 import List from './list/List';
 import ListWithImage from './list_with_image/ListWithImage';
 import Paragraph from './paragraph/Paragraph';
-import ButtonsTwins from './buttons_twins/ButtonsTwins'
-import InputField from './input_field/InputField'
-import TextField from './text_field/TextField'
-import SelectField from './select_field/SelectField'
-import Radio from './radio/Radio'
+import ButtonsTwins from './buttons_twins/ButtonsTwins';
+import InputField from './input_field/InputField';
+import TextField from './text_field/TextField';
+import SelectField from './select_field/SelectField';
+import Radio from './radio/Radio';
+import Checkbox from './checkbox/Checkbox';
+import Dropdown from './dropdown/Dropdown';
 
 const listItems = [
   {
@@ -218,9 +220,36 @@ ReactDOM.render(
         <Radio items={listItems}
               template={{
                 name: 'test',
-                value: 'name',
-                text: 'address'
+                keysInItems: {
+                  value: 'name',
+                  text: 'address'
+                }
               }} />
+    </Block>
+
+    <hr />
+
+    <Block>
+      <Header medium>Checkbox</Header>
+    </Block>
+    <Block>
+        <Checkbox items={listItems}
+              template={{
+                name: 'checkbox',
+                keysInItems: {
+                  value: 'name',
+                  text: 'address'
+                }
+              }} />
+    </Block>
+
+    <hr />
+
+    <Block>
+      <Header medium>Dropdown</Header>
+    </Block>
+    <Block>
+      <Dropdown>dropdown</Dropdown>
     </Block>
 
     <hr />
