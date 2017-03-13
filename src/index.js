@@ -14,6 +14,7 @@ import SelectField from './select_field/SelectField';
 import Radio from './radio/Radio';
 import Checkbox from './checkbox/Checkbox';
 import Dropdown from './dropdown/Dropdown';
+import Card from './card/Card';
 
 const listItems = [
   {
@@ -258,6 +259,17 @@ ReactDOM.render(
     </Block>
 
     <hr />
+
+    <Block>
+      <Header medium>Card</Header>
+    </Block>
+    <Block>
+      <Card>card</Card>
+    </Block>
+
+    <hr />
+
+
 
   </div>,
   document.getElementById('root')
