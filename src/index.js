@@ -249,7 +249,12 @@ ReactDOM.render(
       <Header medium>Dropdown</Header>
     </Block>
     <Block>
-      <Dropdown>dropdown</Dropdown>
+      <Dropdown items={[
+        {text: 'item 1', onclick: testFunc.bind(null, 'item 1')},
+        {text: 'item 2', onclick: testFunc.bind(null, 'item 2')},
+        {text: 'item 3', onclick: testFunc.bind(null, 'item 3')}]}>
+          <Button>Click me</Button>
+      </Dropdown>
     </Block>
 
     <hr />

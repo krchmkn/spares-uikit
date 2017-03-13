@@ -11,8 +11,8 @@ class Button extends Component {
   render() {
     let inputProps = {
       type: (this.props.submit ? 'submit' : 'button'),
-      className: (this.props.color ?
-        'spares-button ' +  this.props.color : 'spares-button'),
+      className: this.props.color ?
+          'spares-button ' +  this.props.color : 'spares-button',
       onClick: this.props.onclick
     };
 

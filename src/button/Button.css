@@ -12,12 +12,6 @@
   margin: 0 .25em 0 0;
   padding: 10px 20px;
 
-  background: #f4f4f4;
-  background: linear-gradient(to bottom,#fafafa,#f6f6f6,#f3f3f3);
-  color: #666;
-
-  border: 1px solid #eaeaea;
-  border-bottom-color: #cdcdcd;
   text-shadow: none;
   box-shadow: none;
   border-radius: 4px;
@@ -30,20 +24,20 @@
 
   cursor: pointer;
   outline: none;
-  transition: all .3s ease;
-}
 
-.spares-button:active {
-  transform: scale(0.9, 0.9);
+  background: #f4f4f4;
+  background: linear-gradient(to bottom,#fafafa,#f6f6f6,#f3f3f3);
+  color: #666;
+
+  border: 1px solid #eaeaea;
+  border-bottom-color: #cdcdcd;
 }
 
 .spares-button:disabled {
   cursor: not-allowed;
-
+  opacity: .8;
   background: #ddd;
   color: #707070;
-
-  opacity: .8;
 }
 
 .spares-button.primary {
@@ -79,4 +73,16 @@
   background: linear-gradient(to bottom,#e64c3c,#db4839,#d04536);
 
   opacity: .7;
+}
+
+.spares-button:active {
+  background: #f4f4f4;
+}
+
+.spares-button.primary:active {
+  background: #097487;
+}
+
+.spares-button.danger:active {
+  background: #e64c3c;
 }

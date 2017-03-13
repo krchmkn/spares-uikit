@@ -20,15 +20,15 @@
   margin-bottom: 10px;
 }
 
+.spares-radio:focus,
+.spares-radio:active {
+  outline: none;
+}
+
 .spares-radio-label:active {
   color: #1b7f8f;
 }
 
 .spares-radio {
   margin-right: 10px;
-}
-
-.spares-radio:focus,
-.spares-radio:active {
-  outline: none;
 }

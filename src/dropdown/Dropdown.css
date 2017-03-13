@@ -1,9 +1,123 @@
+.spares-dropdown,
+.spares-dropdown-block,
+.spares-dropdown-block-item,
+.spares-dropdown-block-text  {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  color: #333;
+
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: 400;
+  z-index: 1;
+}
+
 .spares-dropdown {
   position: relative;
+  background: none;
+  display: inline-block;
+  width: auto;
 }
 
 .spares-dropdown-block {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 125%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.10), 0 1px 5px 0 rgba(34,36,38,.12);
+  border-radius: 4px;
+  padding: 3px 10px;
+  border: 1px solid rgba(34,36,38,.1);
+}
+
+.spares-dropdown-block:before,
+.spares-dropdown-block:after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+}
+
+.spares-dropdown-block:before {
+  margin-left: -8px;
+  border: 8px solid transparent;
+  border-bottom: 8px solid rgba(34,36,38,.2);
+}
+
+.spares-dropdown-block:after {
+  margin-left: -7px;
+  border: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+}
+
+
+.spares-dropdown-block-item  {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.spares-dropdown-block-item:last-child {
+  border: 0;
+}
+
+.spares-dropdown-block-text {
+  padding: 10px;
+}
+
+.spares-dropdown-block-text:active {
+  color: #1b7f8f;
+}
+
+.animate {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        z-index: -1;
+    }
+    to {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        z-index: -1;
+    }
+    to {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
 }
