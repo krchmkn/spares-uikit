@@ -26,3 +26,8 @@ it('renders <Button disabled /> without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<Button disabled>click</Button>, div);
 });
+
+it('renders <Button icon="" /> without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<Button icon="">click</Button>, div);
+});

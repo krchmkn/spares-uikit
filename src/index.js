@@ -86,6 +86,21 @@ ReactDOM.render(
     <hr />
 
     <Block>
+      <Header medium>Buttons with icons</Header>
+    </Block>
+    <Block>
+      <Button>Button</Button>
+      <Button icon="edit">Edit</Button>
+      <Button icon="refresh">Refresh</Button>
+      <Button icon="menu">Menu</Button>
+      <Button icon="dropdown" color="primary">Dropdown</Button>
+      <Button icon="remove" color="danger">Remove</Button>
+    </Block>
+
+
+    <hr />
+
+    <Block>
       <Header medium>Disabled buttons</Header>
     </Block>
     <Block>
@@ -256,7 +271,7 @@ ReactDOM.render(
         {text: 'item 1', onclick: testFunc.bind(null, 'item 1')},
         {text: 'item 2', onclick: testFunc.bind(null, 'item 2')},
         {text: 'item 3', onclick: testFunc.bind(null, 'item 3')}]}>
-          <Button>Click me</Button>
+          <Button icon="dropdown">Click me</Button>
       </Dropdown>
     </Block>
 

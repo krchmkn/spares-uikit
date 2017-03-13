@@ -4,9 +4,11 @@
 * Author Dmitri Korchemkin
 */
 
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
 .spares-button {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   box-sizing: border-box;
 
   margin: 0 .25em 0 0;
@@ -31,6 +33,7 @@
 
   border: 1px solid #eaeaea;
   border-bottom-color: #cdcdcd;
+
 }
 
 .spares-button:disabled {
@@ -85,4 +88,16 @@
 
 .spares-button.danger:active {
   background: #e64c3c;
+}
+
+.spares-button.icon {
+  padding: 7px 15px 7px 10px;
+}
+
+.spares-button.icon i {
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
