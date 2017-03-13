@@ -14,10 +14,21 @@ class Dropdown extends Component {
     this.toggle = this.toggle.bind(this);
   }
 
-  toggle() {
+  componentDidMount() {
+    let self = this;
+    window.addEventListener('click', function () {
+      if (self.state.open) {
+        self.toggle(event);
+      }
+    })
+  }
+
+  toggle(event) {
     this.setState({
       open: !this.state.open
-    })
+    });
+
+    event.stopPropagation();
   }
 
   render() {

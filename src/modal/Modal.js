@@ -20,6 +20,10 @@ class Modal extends Component {
     })
   }
 
+  cancelBubbling(event) {
+    event.stopPropagation();
+  }
+
   render() {
     return (
       <div>
@@ -27,8 +31,9 @@ class Modal extends Component {
               onClick={this.toggle}>{this.props.buttonText}</div>
 
         {this.state.open ? (
-          <div className="spares-modal-wrap">
-            <div className="spares-modal animate zoomIn">
+          <div className="spares-modal-wrap" onClick={this.toggle}>
+            <div className="spares-modal animate zoomIn"
+            onClick={this.cancelBubbling}>
               <div className="spares-modal-header">
                 <span>{this.props.header}</span>
                 <span onClick={this.toggle}

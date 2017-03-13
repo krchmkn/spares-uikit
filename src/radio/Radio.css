@@ -31,4 +31,6 @@
 
 .spares-radio {
   margin-right: 10px;
+  display: inline-block;
+  vertical-align: baseline;
 }

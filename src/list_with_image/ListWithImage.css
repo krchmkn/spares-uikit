@@ -87,4 +87,12 @@ a.spares-list-with-image-header {
   .spares-list-with-image-unit.small {
     width: 100%;
   }
+
+  .spares-list-with-image-item,
+  .spares-list-with-image-flex {
+    flex-direction: column;
+  }
+  .spares-list-with-image-unit {
+    margin: 0;
+  }
 }

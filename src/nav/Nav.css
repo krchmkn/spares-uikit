@@ -56,3 +56,10 @@ a.spares-menu-item-link {
 .spares-menu-item-link.active {
   border-color: #5fb5c4;
 }
+
+
+@media (max-width: 980px) {
+  .spares-menu {
+    flex-direction: column;
+  }
+}

@@ -38,4 +38,8 @@
   .spares-block {
       width: 100%;
   }
+
+  .spares-block.flex {
+    flex-direction: column;
+  }
 }

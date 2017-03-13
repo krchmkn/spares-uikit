@@ -17,6 +17,8 @@ import Dropdown from './dropdown/Dropdown';
 import Card from './card/Card';
 import Modal from './modal/Modal';
 import Nav from './nav/Nav';
+import Table from './table/Table';
+
 
 const listItems = [
   {
@@ -315,6 +317,43 @@ ReactDOM.render(
 
     <hr />
 
+
+    <Block>
+      <Header medium>Table</Header>
+    </Block>
+    <Block>
+      <Table head={[
+              [
+                [''], ['Traffic'], ['Indicators'], ['Conversion'], ['Finance']
+              ],
+              [
+                ['Date'],
+                ['Clicks', 'Unique clicks', 'Conversion'],
+                ['ECPC', 'Approve', 'Waiting', 'Orders'],
+                ['Waiting', 'Accepted', 'Canceled', 'Trash'], ['Enrolled', 'Pending', 'Rejected']
+              ]
+            ]}
+            body={[
+              [
+                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+              ], [
+                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+              ], [
+                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+              ], [
+                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+              ], [
+                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+              ], [
+                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+              ]
+            ]}
+            total={[
+              ['Total:'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+            ]} />
+    </Block>
+
+    <hr />
 
   </div>,
   document.getElementById('root')

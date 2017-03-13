@@ -50,3 +50,10 @@
   color: #999;
   padding-right: 10px;
 }
+
+
+@media (max-width: 980px) {
+  .spares-list-item {
+    flex-direction: column;
+  }
+}
