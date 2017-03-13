@@ -22,39 +22,8 @@ class ButtonsTwins extends Component {
     }
   }
 
-  checkItems(items) {
-    let message = `Spares uikit: <ButtonsTwins /> component property items
-    should be an array of objects. 'Object.text' should be a string.
-    'Object.onclick' should be a function;
-    Example:
-    [{
-        text: 'Click me',
-        onclick: foo.bind(null, 'foo')
-      }, {
-        text: 'And me',
-        onclick: bar.bind(null, 'bar')
-      }];\n`;
-
-    if (typeof items !== 'object'
-        || items.length == null
-        || items.length <= 0) {
-      throw new Error(message);
-    } else {
-      for (let item of items) {
-        if (typeof item !== 'object'
-            || typeof item.text !== 'string'
-            || typeof item.onclick !== 'function') {
-          throw new Error(message);
-        }
-      }
-    }
-
-  }
-
   render() {
-    let items = this.props.items;
-
-    this.checkItems(items)
+    const items = this.props.items;
 
     return (
       <div className="spares-buttons-twins">
@@ -72,7 +41,12 @@ class ButtonsTwins extends Component {
 }
 
 ButtonsTwins.propTypes = {
-  items: React.PropTypes.array.isRequired
+  items: React.PropTypes.arrayOf(
+    React.PropTypes.shape({
+      text: React.PropTypes.string.isRequired,
+      onclick: React.PropTypes.func.isRequired
+    })
+  )
 };
 
 export default ButtonsTwins;

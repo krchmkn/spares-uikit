@@ -1,6 +1,5 @@
 ## TODO
 
-- dropdown
 - card
 - nav
 - modal

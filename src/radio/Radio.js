@@ -30,8 +30,14 @@ class Radio extends Component {
 }
 
 Radio.propTypes = {
-  items: React.PropTypes.array.isRequired,
-  template: React.PropTypes.object.isRequired
+  items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  template: React.PropTypes.shape({
+    name: React.PropTypes.string.isRequired,
+    keysInItems:  React.PropTypes.shape({
+      value: React.PropTypes.string.isRequired, // key in items
+      text: React.PropTypes.string.isRequired // key in items
+    })
+  })
 };
 
 

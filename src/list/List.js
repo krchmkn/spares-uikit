@@ -8,31 +8,9 @@ import React, { Component } from 'react';
 import './List.css';
 
 class List extends Component {
-
-  checkTemplate(template) {
-    let message = `Spares uikit: <List /> component template should be an array of items.
-    Item in array should be an array of objects. Object should have keys: 'label' and 'key'.
-    'Object.key' should be the key in items={}.
-    Example:
-    [
-      [ { label: 'My name is', key: 'first_name' }, { label: 'My surname is', key: 'second_name' } ],
-      [ { label: 'I am from', key: 'address' } ]
-    ]\n`;
-
-    for (let tmpl of template) {
-      if (typeof tmpl !== 'object'
-          || tmpl.length == null
-          || tmpl.length === 0) {
-        throw new Error(message);
-      }
-    }
-  }
-
   render() {
-    let items = this.props.items;
-    let template = this.props.template;
-
-    this.checkTemplate(template);
+    const items = this.props.items;
+    const template = this.props.template;
 
     return (
       <ul className="spares-list">
@@ -56,8 +34,15 @@ class List extends Component {
 }
 
 List.propTypes = {
-  items: React.PropTypes.array.isRequired,
-  template: React.PropTypes.array.isRequired
+  items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  template: React.PropTypes.arrayOf(
+    React.PropTypes.arrayOf(
+      React.PropTypes.shape({
+        label: React.PropTypes.string.isRequired,
+        key: React.PropTypes.string.isRequired // key in items
+      })
+    )
+  )
 };
 
 export default List;

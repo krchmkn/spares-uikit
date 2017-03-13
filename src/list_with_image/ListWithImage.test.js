@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ListWithImage from './ListWithImage';
 
-it('renders without crashing', () => {
+it('renders <ListWithImage /> without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<ListWithImage />, div);
+  ReactDOM.render(<ListWithImage items={[]} />, div);
 });

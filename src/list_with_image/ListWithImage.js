@@ -8,59 +8,9 @@ import React, { Component } from 'react';
 import './ListWithImage.css';
 
 class ListWithImage extends Component {
-
-  checkTemplate(template) {
-    let message = `Spares uikit:
-    <ListWithImage /> component template should be an object.
-    'template.labels' should be an array of objects.
-    Value in 'labels.key' should be the key in items={}
-    Example:
-    {
-      header: 'name',
-      pageLink: 'pagelink',
-      image: 'image',
-      description: 'description',
-      labels: [
-        {label: 'first name', key: 'first_name'},
-        {label: 'second name', key: 'second_name'}
-      ]
-    }\n`;
-
-    if (typeof template !== 'object') {
-      throw new Error(message);
-    }
-
-    for (let tmpl in template) {
-      if (tmpl) {
-        switch (tmpl) {
-          case 'header':
-          case 'pageLink':
-          case 'image':
-          case 'description':
-            if (typeof template[tmpl] !== 'string') {
-              throw new Error(message);
-            }
-            break;
-          case 'labels':
-            if (typeof template[tmpl] !== 'object') {
-              throw new Error(message);
-            }
-            break;
-          default:
-            throw new Error(message);
-        }
-      } else {
-        throw new Error(message);
-      }
-    }
-  }
-
   render() {
-
-    let items = this.props.items;
-    let template = this.props.template;
-
-    this.checkTemplate(template);
+    const items = this.props.items;
+    const template = this.props.template;
 
     return (
       <ul className="spares-list-with-image">
@@ -102,8 +52,19 @@ class ListWithImage extends Component {
 }
 
 ListWithImage.propTypes = {
-  items: React.PropTypes.array.isRequired,
-  template: React.PropTypes.object.isRequired
+  items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  template: React.PropTypes.shape({
+    header: React.PropTypes.string.isRequired,
+    pageLink: React.PropTypes.string.isRequired,
+    image: React.PropTypes.string.isRequired,
+    description: React.PropTypes.string.isRequired,
+    labels: React.PropTypes.arrayOf(
+      React.PropTypes.shape({
+        label: React.PropTypes.string.isRequired,
+        key: React.PropTypes.string.isRequired // key in items
+      })
+    )
+  })
 };
 
 

@@ -9,7 +9,6 @@ import './Block.css';
 
 class Block extends Component {
   render() {
-
     let inputProps = {
       className: 'spares-block'
     };
