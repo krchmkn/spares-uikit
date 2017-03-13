@@ -2,7 +2,9 @@
   display: block;
   width: 100%;
   overflow-x: auto;
+  border: 1px solid #ddd;
 }
+
 
 .spares-table {
   table-layout: fixed;
@@ -10,8 +12,12 @@
   min-width: 100%;
   margin: 0;
   padding: 0;
-  border: 1px solid #ddd;
+  border: 0;
   border-collapse: collapse;
+}
+
+.spares-table td {
+  background: #fff;
 }
 
 .spares-table th,
