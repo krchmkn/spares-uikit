@@ -275,6 +275,13 @@ ReactDOM.render(
         {text: 'item 3', onclick: testFunc.bind(null, 'item 3')}]}>
           <Button icon="dropdown">Click me</Button>
       </Dropdown>
+
+      <Dropdown items={[
+        {text: 'item 1', onclick: testFunc.bind(null, 'item 1')},
+        {text: 'item 2', onclick: testFunc.bind(null, 'item 2')},
+        {text: 'item 3', onclick: testFunc.bind(null, 'item 3')}]}>
+          <Button icon="dropdown">Click me</Button>
+      </Dropdown>
     </Block>
 
     <hr />
@@ -306,8 +313,16 @@ ReactDOM.render(
     </Block>
     <Block>
       <Nav items={[
-        {link: '/page', text: 'page 1'},
-        {link: '/page', text: 'page 2'},
+        {text: 'page 1', submenu: [
+          {link: '/subpage', text: 'subpage'},
+          {link: '/subpage', text: 'subpage'},
+          {link: '/subpage', text: 'subpage'},
+          {link: '/subpage', text: 'subpage'}
+        ]},
+        {text: 'page 2', submenu: [
+          {link: '/subpage', text: 'subpage'},
+          {link: '/subpage', text: 'subpage'}
+        ]},
         {link: '/page', text: 'page 3'},
         {link: '/page', text: 'page 4'},
         {link: '/page', text: 'page 5'},

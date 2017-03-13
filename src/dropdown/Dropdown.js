@@ -12,6 +12,7 @@ class Dropdown extends Component {
     super(props);
     this.state = {open: false};
     this.toggle = this.toggle.bind(this);
+    this.close = this.close.bind(this);
   }
 
   componentDidMount() {
@@ -27,14 +28,19 @@ class Dropdown extends Component {
     this.setState({
       open: !this.state.open
     });
-
     event.stopPropagation();
+  }
+
+  close() {
+    this.setState({
+      open: false
+    });
   }
 
   render() {
     const children = this.props.children;
     return (
-        <div className="spares-dropdown">
+        <div className="spares-dropdown" onMouseLeave={this.close}>
           <div onClick={this.toggle}>
             {children}
           </div>
