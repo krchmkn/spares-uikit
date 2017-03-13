@@ -16,6 +16,7 @@ import Checkbox from './checkbox/Checkbox';
 import Dropdown from './dropdown/Dropdown';
 import Card from './card/Card';
 import Modal from './modal/Modal';
+import Nav from './nav/Nav';
 
 const listItems = [
   {
@@ -283,7 +284,21 @@ ReactDOM.render(
 
     <hr />
 
+    <Block>
+      <Header medium>Nav</Header>
+    </Block>
+    <Block>
+      <Nav items={[
+        {link: '/page', text: 'page 1'},
+        {link: '/page', text: 'page 2'},
+        {link: '/page', text: 'page 3'},
+        {link: '/page', text: 'page 4'},
+        {link: '/page', text: 'page 5'},
+        {link: '/page', text: 'page 6'}
+      ]}/>
+    </Block>
 
+    <hr />
 
 
   </div>,
