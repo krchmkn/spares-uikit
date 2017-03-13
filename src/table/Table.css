@@ -3,8 +3,8 @@
   width: 100%;
   overflow-x: auto;
   border: 1px solid #ddd;
+  border-right: 0;
 }
-
 
 .spares-table {
   table-layout: fixed;
@@ -14,6 +14,7 @@
   padding: 0;
   border: 0;
   border-collapse: collapse;
+  border-right: 1px solid #ddd;
 }
 
 .spares-table td {
