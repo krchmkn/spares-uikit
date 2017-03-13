@@ -15,6 +15,7 @@ import Radio from './radio/Radio';
 import Checkbox from './checkbox/Checkbox';
 import Dropdown from './dropdown/Dropdown';
 import Card from './card/Card';
+import Modal from './modal/Modal';
 
 const listItems = [
   {
@@ -268,6 +269,20 @@ ReactDOM.render(
     </Block>
 
     <hr />
+
+    <Block>
+      <Header medium>Modal</Header>
+    </Block>
+    <Block>
+      <Modal header="Modal" buttonText="openModal">
+        <div>
+          <p>Modal</p>
+        </div>
+      </Modal>
+    </Block>
+
+    <hr />
+
 
 
 
