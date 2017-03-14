@@ -10,7 +10,15 @@ import './Table.css';
 class Table extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      sort: {
+        key: '',
+        type: ''
+      }
+    };
     this.calcTotal = this.calcTotal.bind(this);
+    this.sortBody = this.sortBody.bind(this);
+    this.toggleSort = this.toggleSort.bind(this);
   }
 
   checkData(t, item) {
@@ -24,9 +32,9 @@ class Table extends Component {
     return item[t];
   }
 
-  calcTotal() {
+  calcTotal(body_items) {
     let calc_total = {}
-    for (let item of this.props.body.items) {
+    for (let item of body_items) {
       for (let tl of this.props.total) {
         for(let t of tl) {
           if (item.hasOwnProperty(t)) {
@@ -47,12 +55,45 @@ class Table extends Component {
         }
       }
     }
-
     return calc_total;
   }
 
+  sortBody() {
+    let self_state_sort = this.state.sort;
+    let body_items = [...this.props.body.items];
+
+    if (self_state_sort.type === 'asc') {
+      return body_items.sort(function (a, b) {
+        return (parseInt(a[self_state_sort.key], 10) - parseInt(b[self_state_sort.key], 10));
+      });
+    } else if (self_state_sort.type === 'desc') {
+      return body_items.sort(function (a, b) {
+        return (parseInt(b[self_state_sort.key], 10) - parseInt(a[self_state_sort.key], 10));
+      });
+    } else {
+      return this.props.body.items;
+    }
+  }
+
+  toggleSort(sort_key) {
+    if (this.state.sort.type === '') {
+      this.setState({
+        sort: {key: sort_key, type: 'asc'}
+      });
+    } else if (this.state.sort.type === 'asc') {
+      this.setState({
+        sort: {key: sort_key, type: 'desc'}
+      });
+    } else if (this.state.sort.type === 'desc') {
+      this.setState({
+        sort: {key: '', type: ''}
+      });
+    }
+  }
+
   render() {
-    let total = this.calcTotal();
+    let body_items = this.sortBody();
+    let total = this.calcTotal(body_items);
 
     return (
       <div className="spares-table-wrap">
@@ -65,7 +106,12 @@ class Table extends Component {
                     <div className="spares-subtable">
                       {val.map((v, i) =>
                         <div key={i} className="spares-subcol">
-                          {v}
+                          {v.sort ? (
+                            <div className="sort"
+                                onClick={() => this.toggleSort(v.sort) }>
+                              {v.text}
+                            </div>
+                          ) : v.text}
                         </div>
                       )}
                     </div>
@@ -76,7 +122,7 @@ class Table extends Component {
           </thead>
 
           <tbody>
-            {this.props.body.items.map((item, index) =>
+            {body_items.map((item, index) =>
               <tr key={index}>
                 {this.props.body.template.map((tmpl, indx) =>
                   <td key={indx}>
@@ -116,7 +162,14 @@ class Table extends Component {
 
 Table.propTypes = {
   head: React.PropTypes.arrayOf(
-    React.PropTypes.arrayOf(React.PropTypes.array).isRequired
+    React.PropTypes.arrayOf(
+      React.PropTypes.arrayOf(
+        React.PropTypes.shape({
+          text: React.PropTypes.string.isRequired,
+          sort: React.PropTypes.string
+        })
+      )
+    )
   ),
   body: React.PropTypes.shape({
     items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,

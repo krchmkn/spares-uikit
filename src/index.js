@@ -60,54 +60,79 @@ const testFunc = function (name) {
 
 const tableItems = [
   {
-    client_unique:null,
-    client_clicks:19553,
-    client_visit:2562,
-    order_count:73,
-    wait_count:42,
-    cancel_count:29,
-    accepted_count:2,
-    order_debug_count:0,
-    accepted_seller_commission:1400.00,
-    accepted_partner_profit:1200.00,
-    accepted_system_profit:200.00,
-    wait_seller_commission:33820.00,
-    wait_partner_profit:29600.00,
-    wait_system_profit:4220.00,
-    cancel_seller_commission:23080.00,
-    cancel_partner_profit:20200.00,
-    cancel_system_profit:2880.00,
-    max_date_group:1481625525,
-    group_name:'13-12-2016',
-    conversion:0.3724,
-    partner_profit_from_unique_client:0.061218,
-    approve:2.7397,
-    wait:57.5342
+    'client_unique':null,
+    'client_clicks': 1000,
+    'client_visit':2562,
+    'order_count':73,
+    'wait_count':42,
+    'cancel_count':29,
+    'accepted_count':2,
+    'order_debug_count':0,
+    'accepted_seller_commission':1400.00,
+    'accepted_partner_profit':1200.00,
+    'accepted_system_profit':200.00,
+    'wait_seller_commission':33820.00,
+    'wait_partner_profit':29600.00,
+    'wait_system_profit':4220.00,
+    'cancel_seller_commission':23080.00,
+    'cancel_partner_profit':20200.00,
+    'cancel_system_profit':2880.00,
+    'max_date_group':1481625525,
+    'group_name':'13-12-2016',
+    'conversion':0.3724,
+    'partner_profit_from_unique_client':0.061218,
+    'approve':2.7397,
+    'wait':57.5342
   },
   {
-    client_unique:19602,
-    client_clicks:19553,
-    client_visit:2562,
-    order_count:73,
-    wait_count:42,
-    cancel_count:29,
-    accepted_count:2,
-    order_debug_count:0,
-    accepted_seller_commission:1400.00,
-    accepted_partner_profit:1200.00,
-    accepted_system_profit:200.00,
-    wait_seller_commission:33820.00,
-    wait_partner_profit:29600.00,
-    wait_system_profit:4220.00,
-    cancel_seller_commission:23080.00,
-    cancel_partner_profit:20200.00,
-    cancel_system_profit:2880.00,
-    max_date_group:1481625525,
-    group_name:'13-12-2016',
-    conversion:0.3724,
-    partner_profit_from_unique_client:0.061218,
-    approve:2.7397,
-    wait:57.5342
+    'client_unique':0,
+    'client_clicks': 3000,
+    'client_visit':2562,
+    'order_count':73,
+    'wait_count':42,
+    'cancel_count':29,
+    'accepted_count':2,
+    'order_debug_count':0,
+    'accepted_seller_commission':1400.00,
+    'accepted_partner_profit':1200.00,
+    'accepted_system_profit':200.00,
+    'wait_seller_commission':33820.00,
+    'wait_partner_profit':29600.00,
+    'wait_system_profit':4220.00,
+    'cancel_seller_commission':23080.00,
+    'cancel_partner_profit':20200.00,
+    'cancel_system_profit':2880.00,
+    'max_date_group':1481625525,
+    'group_name':'13-12-2016',
+    'conversion':0.3724,
+    'partner_profit_from_unique_client':0.061218,
+    'approve':2.7397,
+    'wait':57.5342
+  },
+  {
+    'client_unique': 23424,
+    'client_clicks': 2000,
+    'client_visit':25,
+    'order_count':7,
+    'wait_count':4,
+    'cancel_count':2,
+    'accepted_count':20,
+    'order_debug_count':0,
+    'accepted_seller_commission':140.00,
+    'accepted_partner_profit':120.00,
+    'accepted_system_profit':20.00,
+    'wait_seller_commission':3320.00,
+    'wait_partner_profit':2900.00,
+    'wait_system_profit':420.00,
+    'cancel_seller_commission':2380.00,
+    'cancel_partner_profit':2000.00,
+    'cancel_system_profit':2880.00,
+    'max_date_group':1481625525,
+    'group_name':'13-12-2016',
+    'conversion':0.3724,
+    'partner_profit_from_unique_client':0.061218,
+    'approve':2.7397,
+    'wait':57.5342
   }
 ]
 
@@ -392,14 +417,32 @@ ReactDOM.render(
     <Block>
       <Table head={[
               [
-                [''], ['Traffic'], ['Indicators'], ['Conversion'], ['Finance']
+                [{text: ''}], [{text: 'Traffic'}], [{text: 'Indicators'}], [{text: 'Conversion'}], [{text: 'Finance'}]
               ],
               [
-                ['Date'],
-                ['Clicks', 'Unique clicks', 'Conversion'],
-                ['ECPC', 'Approve', 'Waiting', 'Orders'],
-                ['Waiting', 'Accepted', 'Canceled', 'Trash'],
-                ['Enrolled', 'Pending', 'Rejected']
+                [{text: 'Date'}],
+                [
+                  {text: 'Clicks', sort: 'client_clicks'},
+                  {text: 'Unique clicks', sort: 'client_unique'},
+                  {text: 'Conversion', sort: 'conversion'}
+                ],
+                [
+                  {text: 'ECPC', sort: 'partner_profit_from_unique_client'},
+                  {text: 'Approve', sort: 'approve'},
+                  {text: 'Waiting', sort: 'wait_count'},
+                  {text: 'Orders', sort: 'order_count'}
+                ],
+                [
+                  {text: 'Waiting', sort: 'wait'},
+                  {text: 'Accepted', sort: 'accepted_count'},
+                  {text: 'Canceled', sort: 'cancel_count'},
+                  {text: 'Trash', sort: 'order_debug_count'}
+                ],
+                [
+                  {text: 'Enrolled', sort: 'accepted_count'},
+                  {text: 'Pending', sort: 'cancel_count'},
+                  {text: 'Rejected', sort: 'order_debug_count'}
+                ]
               ]
             ]}
             body={{

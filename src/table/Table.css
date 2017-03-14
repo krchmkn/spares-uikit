@@ -25,7 +25,6 @@
 .spares-table td {
   color: #333;
   font-weight: 400;
-  /*padding: 5px 10px;*/
   font-size: 15px;
   line-height: 25px;
   margin: 0;
@@ -66,7 +65,7 @@
   padding: 5px 10px;
   text-align: left;
   flex-grow: 1;
-  width: 100px;
+  width: 120px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -77,4 +76,26 @@
 .spares-table td:last-child,
 .spares-subcol:last-child {
   border-right: 0;
+}
+
+
+.spares-subcol .sort {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.spares-subcol .sort:before {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 7px;
+  height: 14px;
+  margin-top: -7px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOBAMAAAARcxsoAAAAGFBMVEUAAACZmZmZmZmZmZmZmZmZmZmZmZmZmZl5tJwoAAAACHRSTlMATvribFvuuFGQnnMAAAAnSURBVAjXY2AQE2BgYFRXZGAQcnASYDBlYDVgwAvASsCKwdrABgAAaJEC+/cD5tgAAAAASUVORK5CYII=') center center no-repeat;
+}
+
+.spares-subcol .sort:active {
+  color: #1b7f8f;
 }
