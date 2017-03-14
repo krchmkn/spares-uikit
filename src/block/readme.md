@@ -27,3 +27,13 @@ ReactDOM.render(
 , document.getElementById('root'));
 
 ```
+
+## PropTypes
+
+```jsx
+
+Block.propTypes = {
+  flex: React.PropTypes.bool
+}
+
+```

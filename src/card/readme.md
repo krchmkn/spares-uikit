@@ -26,3 +26,7 @@ ReactDOM.render(
 , document.getElementById('root'));
 
 ```
+
+## PropTypes
+
+No property types

@@ -27,3 +27,16 @@ ReactDOM.render(
 , document.getElementById('root'));
 
 ```
+
+## PropTypes
+
+```jsx
+
+Header.propTypes = {
+  center: React.PropTypes.bool,
+  medium: React.PropTypes.bool,
+  small: React.PropTypes.bool
+};
+
+
+```
