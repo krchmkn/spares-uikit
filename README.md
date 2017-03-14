@@ -1,6 +1,10 @@
 # Spares uikit
 
-React.js uikit components. For more information about installation and usage see project [wiki](https://github.com/korchemkin/spares/wiki)
+React.js uikit components. 
+
+## Usage
+
+For information on use see project [wiki](https://github.com/korchemkin/spares/wiki)
 
 ## License
 
