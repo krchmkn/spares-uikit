@@ -1,7 +1,11 @@
 {
   "name": "spares-uikit",
   "description": "React.js uikit",
-  "author": "Dmitri Korchemkin <dmitri.korchemkin@gmail.com>",
+  "author": {
+    "name": "Dmitri Korchemkin",
+    "email": "dmitri.korchemkin@gmail.com",
+    "url": "korchemkin.github.io"
+  },
   "license": "MIT",
   "version": "1.0.0",
   "private": false,
