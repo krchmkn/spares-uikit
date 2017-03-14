@@ -23,26 +23,39 @@ ReactDOM.render(
 
     <Button color="danger">Click me</Button>
 
-    <Button icon="edit">Edit</Button>
-
-    <Button icon="refresh">Refresh</Button>
-
-    <Button icon="menu">Menu</Button>
-
-    <Button icon="dropdown" color="primary">Dropdown</Button>
-
-    <Button icon="remove" color="danger">Remove</Button>
-
-    <Button disabled>Click me</Button>
-
-    <Button color="primary" disabled>Click me</Button>
-    
-    <Button color="danger" disabled>Click me</Button>
-
   </div>
 , document.getElementById('root'));
 
 ```
+
+## Button with icon
+
+```jsx
+
+  <Button icon="edit">Edit</Button>
+
+  <Button icon="refresh">Refresh</Button>
+
+  <Button icon="menu">Menu</Button>
+
+  <Button icon="dropdown" color="primary">Dropdown</Button>
+
+  <Button icon="remove" color="danger">Remove</Button>
+
+```
+
+# Button disabled
+
+```jsx
+
+  <Button disabled>Click me</Button>
+
+  <Button color="primary" disabled>Click me</Button>
+
+  <Button color="danger" disabled>Click me</Button>
+
+```
+
 
 ## PropTypes
 
