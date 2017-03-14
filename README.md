@@ -2,6 +2,8 @@
 
 React.js uikit components
 
+## Installation
+
 First you need clone repo and install dependencies
 
 ```sh
@@ -15,7 +17,7 @@ npm start
 ```
 
 
-## Components
+## Usage
 
 - [Block](https://github.com/korchemkin/spares/tree/master/src/block)
 - [Header](https://github.com/korchemkin/spares/tree/master/src/header)
@@ -46,7 +48,6 @@ npm start
 
 
 - [Table](https://github.com/korchemkin/spares/tree/master/src/table)
-
 
 ## License
 
