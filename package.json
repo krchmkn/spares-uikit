@@ -1,6 +1,22 @@
 {
   "name": "spares-uikit",
+  "description": "React.js uikit",
+  "author": "Dmitri Korchemkin <dmitri.korchemkin@gmail.com>",
+  "license": "MIT",
   "version": "1.0.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korchemkin/spares"
+  },
+  "bugs": {
+    "url": "https://github.com/korchemkin/spares/issues"
+  },
+  "keywords": [
+    "spares",
+    "uikit",
+    "react"
+  ],
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
