@@ -1,26 +1,8 @@
-# Spares UI kit
+# Spares uikit
 
 React.js uikit components
 
-## Installation
-
-First you need clone repo and install dependencies
-
-```sh
-npm install
-
-```
-
-Than you can run examples of `Spares uikit`
-
-```sh
-npm start
-
-```
-
-## Usage
-
-See project [wiki](https://github.com/korchemkin/spares/wiki)
+For more information about installation and usage see project [wiki](https://github.com/korchemkin/spares/wiki)
 
 ## License
 
