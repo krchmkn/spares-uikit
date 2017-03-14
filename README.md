@@ -4,7 +4,7 @@ React.js uikit components
 
 First you need install dependencies
 
-```bash
+```sh
 npm install
 ```
 
