@@ -19,8 +19,6 @@ npm start
 
 ## Usage
 
-📖 - docs inside
-
 - [Block](https://github.com/korchemkin/spares/tree/master/src/block)
 - [Header](https://github.com/korchemkin/spares/tree/master/src/header)
 - [Paragraph](https://github.com/korchemkin/spares/tree/master/src/paragraph)
