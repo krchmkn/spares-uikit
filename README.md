@@ -24,4 +24,4 @@ See project [wiki](https://github.com/korchemkin/spares/wiki)
 
 ## License
 
-MIT
+[MIT](https://github.com/korchemkin/spares/wiki/License)
