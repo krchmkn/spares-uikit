@@ -58,6 +58,59 @@ const testFunc = function (name) {
   console.log(name);
 };
 
+const tableItems = [
+  {
+    client_unique:null,
+    client_clicks:19553,
+    client_visit:2562,
+    order_count:73,
+    wait_count:42,
+    cancel_count:29,
+    accepted_count:2,
+    order_debug_count:0,
+    accepted_seller_commission:1400.00,
+    accepted_partner_profit:1200.00,
+    accepted_system_profit:200.00,
+    wait_seller_commission:33820.00,
+    wait_partner_profit:29600.00,
+    wait_system_profit:4220.00,
+    cancel_seller_commission:23080.00,
+    cancel_partner_profit:20200.00,
+    cancel_system_profit:2880.00,
+    max_date_group:1481625525,
+    group_name:'13-12-2016',
+    conversion:0.3724,
+    partner_profit_from_unique_client:0.061218,
+    approve:2.7397,
+    wait:57.5342
+  },
+  {
+    client_unique:19602,
+    client_clicks:19553,
+    client_visit:2562,
+    order_count:73,
+    wait_count:42,
+    cancel_count:29,
+    accepted_count:2,
+    order_debug_count:0,
+    accepted_seller_commission:1400.00,
+    accepted_partner_profit:1200.00,
+    accepted_system_profit:200.00,
+    wait_seller_commission:33820.00,
+    wait_partner_profit:29600.00,
+    wait_system_profit:4220.00,
+    cancel_seller_commission:23080.00,
+    cancel_partner_profit:20200.00,
+    cancel_system_profit:2880.00,
+    max_date_group:1481625525,
+    group_name:'13-12-2016',
+    conversion:0.3724,
+    partner_profit_from_unique_client:0.061218,
+    approve:2.7397,
+    wait:57.5342
+  }
+]
+
 ReactDOM.render(
   <div>
     <Block>
@@ -345,26 +398,26 @@ ReactDOM.render(
                 ['Date'],
                 ['Clicks', 'Unique clicks', 'Conversion'],
                 ['ECPC', 'Approve', 'Waiting', 'Orders'],
-                ['Waiting', 'Accepted', 'Canceled', 'Trash'], ['Enrolled', 'Pending', 'Rejected']
+                ['Waiting', 'Accepted', 'Canceled', 'Trash'],
+                ['Enrolled', 'Pending', 'Rejected']
               ]
             ]}
-            body={[
-              [
-                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
-              ], [
-                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
-              ], [
-                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
-              ], [
-                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
-              ], [
-                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
-              ], [
-                ['2017-01-01'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+            body={{
+              items: tableItems,
+              template: [
+                ['group_name'],
+                ['client_clicks', 'client_unique', 'conversion'],
+                ['partner_profit_from_unique_client', 'approve', 'wait_count', 'order_count'],
+                ['wait', 'accepted_count', 'cancel_count', 'order_debug_count'],
+                ['accepted_count', 'cancel_count', 'order_debug_count']
               ]
-            ]}
+            }}
             total={[
-              ['Total:'], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]
+              ['Total:'],
+              ['client_clicks', 'client_unique', 'conversion'],
+              ['partner_profit_from_unique_client', 'approve', 'wait_count', 'order_count'],
+              ['wait', 'accepted_count', 'cancel_count', 'order_debug_count'],
+              ['accepted_count', 'cancel_count', 'order_debug_count']
             ]} />
     </Block>
 
