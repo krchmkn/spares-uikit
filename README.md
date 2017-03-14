@@ -46,3 +46,8 @@ npm start
 
 
 - [Table](https://github.com/korchemkin/spares/tree/master/src/table)
+
+
+## License
+
+MIT
