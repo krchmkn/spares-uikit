@@ -2,6 +2,17 @@
 
 React.js uikit components
 
+First you need install dependencies
+
+`npm install`
+
+Than you can run examples of 'Spares uikit'
+
+`npm start`
+
+
+## Components
+
 - [Block](https://github.com/korchemkin/spares/tree/master/src/block)
 - [Header](https://github.com/korchemkin/spares/tree/master/src/header)
 - [Paragraph](https://github.com/korchemkin/spares/tree/master/src/paragraph)
