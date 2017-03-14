@@ -10,7 +10,7 @@ First you need clone repo and install dependencies
 npm install
 ```
 
-Than you can run examples of 'Spares uikit'
+Than you can run examples of `Spares uikit`
 
 ```sh
 npm start
@@ -21,10 +21,10 @@ npm start
 
 📖 - docs inside
 
-- [Block  📖](https://github.com/korchemkin/spares/tree/master/src/block)
-- [Header  📖](https://github.com/korchemkin/spares/tree/master/src/header)
-- [Paragraph  📖](https://github.com/korchemkin/spares/tree/master/src/paragraph)
-- [Card  📖](https://github.com/korchemkin/spares/tree/master/src/card)
+- [Block](https://github.com/korchemkin/spares/tree/master/src/block)
+- [Header](https://github.com/korchemkin/spares/tree/master/src/header)
+- [Paragraph](https://github.com/korchemkin/spares/tree/master/src/paragraph)
+- [Card](https://github.com/korchemkin/spares/tree/master/src/card)
 
 ___
 
