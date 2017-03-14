@@ -19,7 +19,7 @@ npm start
 
 ## Usage
 
-📖 - docs inside
+:page_facing_up: - docs inside
 
 - [Block](https://github.com/korchemkin/spares/tree/master/src/block) 📖
 - [Header](https://github.com/korchemkin/spares/tree/master/src/header)  📖
