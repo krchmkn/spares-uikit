@@ -4,11 +4,15 @@ React.js uikit components
 
 First you need install dependencies
 
-`npm install`
+```sh
+npm install
+```
 
 Than you can run examples of 'Spares uikit'
 
-`npm start`
+```sh
+npm start
+```
 
 
 ## Components
