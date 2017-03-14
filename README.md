@@ -1,6 +1,6 @@
-# Spares UI kit ()
+# Spares UI kit
 
-> React.js uikit components
+React.js uikit components
 
 - [Block](https://github.com/korchemkin/spares/tree/master/src/block)
 - [Header](https://github.com/korchemkin/spares/tree/master/src/header)
