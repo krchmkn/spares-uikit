@@ -8,14 +8,15 @@ First you need clone repo and install dependencies
 
 ```sh
 npm install
+
 ```
 
 Than you can run examples of `Spares uikit`
 
 ```sh
 npm start
-```
 
+```
 
 ## Usage
 
@@ -26,8 +27,8 @@ npm start
 
 ___
 
-- [Button*](https://github.com/korchemkin/spares/tree/master/src/button) <sup><sup>docs</sup></sup>
-- [ButtonsTwins*](https://github.com/korchemkin/spares/tree/master/src/buttons_twins) <sup><sup>docs</sup></sup>
+- [Button](https://github.com/korchemkin/spares/tree/master/src/button) <sup><sup>docs</sup></sup>
+- [ButtonsTwins](https://github.com/korchemkin/spares/tree/master/src/buttons_twins) <sup><sup>docs</sup></sup>
 
 ___
 
