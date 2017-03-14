@@ -19,15 +19,17 @@ npm start
 
 ## Usage
 
-- [Block](https://github.com/korchemkin/spares/tree/master/src/block)
-- [Header](https://github.com/korchemkin/spares/tree/master/src/header)
-- [Paragraph](https://github.com/korchemkin/spares/tree/master/src/paragraph)
-- [Card](https://github.com/korchemkin/spares/tree/master/src/card)
+* - docs inside
+
+- [Block*](https://github.com/korchemkin/spares/tree/master/src/block)
+- [Header*](https://github.com/korchemkin/spares/tree/master/src/header)
+- [Paragraph*](https://github.com/korchemkin/spares/tree/master/src/paragraph)
+- [Card*](https://github.com/korchemkin/spares/tree/master/src/card)
 
 ___
 
-- [Button](https://github.com/korchemkin/spares/tree/master/src/button)
-- [ButtonsTwins](https://github.com/korchemkin/spares/tree/master/src/buttons_twins)
+- [Button*](https://github.com/korchemkin/spares/tree/master/src/button)
+- [ButtonsTwins*](https://github.com/korchemkin/spares/tree/master/src/buttons_twins)
 
 ___
 
