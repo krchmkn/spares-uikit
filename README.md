@@ -2,7 +2,7 @@
 
 React.js uikit components
 
-First you need install dependencies
+First you need clone repo and install dependencies
 
 ```sh
 npm install
