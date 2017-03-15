@@ -9,17 +9,8 @@ import './Button.css';
 
 class Button extends Component {
   createIcon(icon) {
-    const iconClasses = {
-      dropdown: 'icon ion-android-arrow-dropdown',
-      remove: 'icon ion-ios-trash',
-      menu: 'icon ion-android-more-vertical',
-      edit: 'icon ion-edit',
-      refresh: 'icon ion-refresh'
-    };
-
-    icon = icon.toLowerCase();
-    if (iconClasses.hasOwnProperty(icon)) {
-      return <i className={iconClasses[icon]}></i>
+    if (icon) {
+      return <i className={icon}></i>
     }
     return null;
   }

@@ -31,7 +31,7 @@ ReactDOM.render(
     {/* button */}
 
     <Block>
-      <Button color="primary">Click me</Button>
+      <Button icon="icon ion-loop" color="primary">Click me</Button>
     </Block>
 
   </div>,
