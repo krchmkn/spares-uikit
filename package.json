@@ -1,37 +1,39 @@
 {
   "name": "spares-uikit",
-  "description": "React.js uikit",
-  "author": {
-    "name": "Dmitri Korchemkin",
-    "email": "dmitri.korchemkin@gmail.com",
-    "url": "korchemkin.github.io"
-  },
-  "license": "MIT",
   "version": "1.0.0",
-  "private": false,
+  "description": "React.js uikit",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build": "babel src/spares --out-dir lib --source-maps inline --copy-files"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/korchemkin/spares"
-  },
-  "bugs": {
-    "url": "https://github.com/korchemkin/spares/issues"
+    "url": "git+https://github.com/korchemkin/spares.git"
   },
   "keywords": [
     "spares",
     "uikit",
     "react"
   ],
-  "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+  "author": {
+    "name": "Dmitri Korchemkin",
+    "email": "dmitri.korchemkin@gmail.com",
+    "url": "korchemkin.github.io"
   },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/korchemkin/spares/issues"
+  },
+  "homepage": "https://github.com/korchemkin/spares/wiki",
   "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-env": "^1.2.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-scripts": "0.9.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
   }
 }
