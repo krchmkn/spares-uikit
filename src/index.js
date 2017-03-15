@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Block from './spares/block/Block';
-import Button from './spares/button/Button';
+import Button from '../lib/button/Button';
 import Header from './spares/header/Header';
 import List from './spares/list/List';
 import ListWithImage from './spares/list_with_image/ListWithImage';
