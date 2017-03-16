@@ -5,11 +5,11 @@
 
 ### About
 
-React.js uikit components. 
+React.js uikit components.
 
 ### Usage
 
-For information on use see project [wiki](https://github.com/korchemkin/spares/wiki)
+For information on use see project [wiki](https://github.com/korchemkin/spares-uikit/wiki)
 
 ### Contributing
 
@@ -22,4 +22,4 @@ For information on use see project [wiki](https://github.com/korchemkin/spares/w
 
 ### License
 
-[MIT](https://github.com/korchemkin/spares/wiki/License)
+[MIT](https://github.com/korchemkin/spares-uikit/wiki/License)

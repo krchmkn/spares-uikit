@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/korchemkin/spares.git"
+    "url": "git+https://github.com/korchemkin/spares-uikit"
   },
   "keywords": [
     "spares",
@@ -26,9 +26,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/korchemkin/spares/issues"
+    "url": "https://github.com/korchemkin/spares-uikit/issues"
   },
-  "homepage": "https://github.com/korchemkin/spares/wiki",
+  "homepage": "https://korchemkin.github.io/spares-uikit/build",
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-plugin-transform-react-jsx": "^6.23.0",
