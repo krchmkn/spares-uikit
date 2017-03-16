@@ -6,8 +6,8 @@
 
 .gitignore
 
-spares.js
-
 *.test.js
 
 .DS_Store
+
+npm-debug.log

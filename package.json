@@ -2,7 +2,7 @@
   "name": "spares-uikit",
   "version": "1.0.0",
   "description": "React.js uikit",
-  "main": "index.js",
+  "main": "spares.js",
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
