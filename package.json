@@ -1,6 +1,6 @@
 {
   "name": "spares-uikit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React.js uikit",
   "main": "spares.js",
   "scripts": {
