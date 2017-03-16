@@ -1,1 +1,13 @@
+/public
+
 /src
+
+.babelrc
+
+.gitignore
+
+spares.js
+
+*.test.js
+
+.DS_Store
