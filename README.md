@@ -13,7 +13,7 @@ For information on use see project [wiki](https://github.com/korchemkin/spares/w
 
 ### Contributing
 
-1. Fork repo.
+1. Fork [repo](https://github.com/korchemkin/spares-uikit).
 2. Create new branch.
 3. Make your changes.
 4. Test you changes and add test files to branch.
