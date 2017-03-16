@@ -46,7 +46,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
   border-bottom: 1px solid #ececec;
   font-size: 26px;
 }
@@ -56,13 +56,23 @@
 }
 
 .spares-modal-button {
-  cursor: pointer
+  cursor: pointer;
+  color: #4F8EF7;
+}
+
+.spares-modal-button i {
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .spares-modal-close {
-  font-size: 34px;
+  font-size: 20px;
   color: #c4c4c4;
   cursor: pointer;
+  padding: 10px;
 }
 
 .animate {

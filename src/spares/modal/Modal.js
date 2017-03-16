@@ -28,7 +28,9 @@ class Modal extends Component {
     return (
       <div>
         <div className="spares-modal-button"
-              onClick={this.toggle}>{this.props.buttonText}</div>
+              onClick={this.toggle}>
+          {this.props.buttonText}
+        </div>
 
         {this.state.open ? (
           <div className="spares-modal-wrap" onClick={this.toggle}>
@@ -36,8 +38,9 @@ class Modal extends Component {
             onClick={this.cancelBubbling}>
               <div className="spares-modal-header">
                 <span>{this.props.header}</span>
-                <span onClick={this.toggle}
-                      className="spares-modal-close">&times;</span>
+                <span onClick={this.toggle} className="spares-modal-close">
+                  <i className={this.props.closeIcon}></i>
+                </span>
               </div>
               <div className="spares-modal-body">
                 {this.props.children}
@@ -52,7 +55,8 @@ class Modal extends Component {
 
 Modal.propTypes = {
   header: React.PropTypes.string.isRequired,
-  buttonText: React.PropTypes.string.isRequired
+  buttonText: React.PropTypes.string.isRequired,
+  closeIcon: React.PropTypes.string
 }
 
 export default Modal;

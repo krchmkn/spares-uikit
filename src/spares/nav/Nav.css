@@ -21,6 +21,10 @@ a.spares-menu-item-link {
   font-weight: 400;
 }
 
+.spares-nav {
+  padding-bottom: 25px;
+}
+
 .spares-menu {
   display: flex;
   flex-direction: row;
@@ -104,6 +108,14 @@ a.spares-menu-item-link {
 
 .spares-submenu-item:last-child {
   border: 0;
+}
+
+.spares-menu-item-link i {
+  margin-left: 5px;
+  font-size: 15px;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media (max-width: 980px) {
