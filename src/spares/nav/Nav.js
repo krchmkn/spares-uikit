@@ -99,10 +99,10 @@ Nav.propTypes = {
             link: React.PropTypes.string.isRequired,
             text: React.PropTypes.string.isRequired
           })
-      ),
-      dropdownIcon: React.PropTypes.string
+      )
     })
-  )
+  ),
+  dropdownIcon: React.PropTypes.string
 };
 
 export default Nav;
