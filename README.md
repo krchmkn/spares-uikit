@@ -1,7 +1,6 @@
 # Spares-uikit
 
 ![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![released 1.0.0](https://img.shields.io/badge/released-1.0.2-blue.svg)
 
 ### About
 
