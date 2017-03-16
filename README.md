@@ -7,6 +7,10 @@
 
 React.js uikit components.
 
+### Demo
+
+[Spares-uikit demo page](https://korchemkin.github.io/spares-uikit/build/)
+
 ### Usage
 
 For information on use see project [wiki](https://github.com/korchemkin/spares-uikit/wiki)
