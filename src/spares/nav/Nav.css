@@ -26,16 +26,18 @@ a.spares-menu-item-link {
 }
 
 .spares-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  font-size: 0;
+  display: block;
   list-style: none;
 }
 
 .spares-menu-item {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
   position: relative;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .spares-menu-item-link,
@@ -116,10 +118,4 @@ a.spares-menu-item-link {
   line-height: 0;
   display: inline-block;
   vertical-align: middle;
-}
-
-@media (max-width: 980px) {
-  .spares-menu {
-    flex-direction: column;
-  }
 }

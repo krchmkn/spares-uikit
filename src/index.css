@@ -1,0 +1,50 @@
+body,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgba(52, 73, 94, .2);
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.spares-demo-menu {
+  background: #fff;
+  padding-top: 25px;
+  margin-bottom: 40px;
+  box-shadow: 1px 0 1px #333;
+  position: relative;
+  z-index: 1;
+}
+
+.spares-demo-to-menu,
+a.spares-demo-to-menu {
+  position: fixed;
+  bottom: 50px;
+  right: 80px;
+  width: auto;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #ddd;
+  font-size: 15px;
+}
+.spares-demo-to-menu i {
+  margin-right: 5px;
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+
+@media (max-width: 980px) {
+  .spares-demo-to-menu {
+    display: none;
+  }
+}
