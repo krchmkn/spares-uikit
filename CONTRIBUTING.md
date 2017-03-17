@@ -13,10 +13,10 @@ App generated with [create-react-app](https://github.com/facebookincubator/creat
 
 ### Dirs
 
-- /build        demo files
-- /lib          npm package files
-- /public       html layout
-- /src/spares   source files
+- `/build`        demo files
+- `/lib`          npm package files
+- `/public`       html layout
+- `/src/spares`   source files
 
 ### Commands
 
