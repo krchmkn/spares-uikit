@@ -1,4 +1,4 @@
-# Spares-uikit
+![spares-uikit](https://raw.githubusercontent.com/korchemkin/spares-uikit/master/logo/spares-uikit-logo.png)
 
 ![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
