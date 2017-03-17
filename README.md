@@ -1,4 +1,4 @@
-![spares-uikit](https://cdn.rawgit.com/korchemkin/spares-uikit/6c7daa50/logo/spares-uikit-logo.svg) 
+# spares-uikit
 
 React.js uikit components with responsive design.
 
