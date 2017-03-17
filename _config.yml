@@ -4,5 +4,6 @@ title: Spares
 description: uikit
 show_downloads: true
 
-is_project_page: false
-is_user_page: false
+github:
+  is_project_page: false
+  is_user_page: false
