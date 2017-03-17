@@ -2,3 +2,6 @@ theme: jekyll-theme-minimal
 
 title: Spares
 description: uikit
+
+site:
+  show_downloads: true
