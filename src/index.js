@@ -1,3 +1,11 @@
+/**
+*
+* Spares-uikit
+*
+* @author Dmitri Korchemkin
+* @source https://github.com/korchemkin/spares-uikit
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 

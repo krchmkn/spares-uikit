@@ -11,9 +11,16 @@
 
 App generated with [create-react-app](https://github.com/facebookincubator/create-react-app)
 
+### Dirs
+
+- /build        demo files
+- /lib          npm package files
+- /public       html layout
+- /src/spares   source files
+
 ### Commands
 
 - `npm start` - to start in browser
 - `npm test` - start Jest testing
-- `npm run build` - build npm package files with Babel 
+- `npm run build` - build npm package files with Babel
 - `npm demo` - build demo page

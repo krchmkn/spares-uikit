@@ -7,14 +7,14 @@
 */
 
 import React, { Component } from 'react';
-import './Paragraph.css';
+import './Search.css';
 
-class Paragraph extends Component {
+class Search extends Component {
   render() {
     return (
-        <p className="spares-paragraph">{this.props.children}</p>
+      <div></div>
     );
   }
 }
 
-export default Paragraph;
+export default Search;
