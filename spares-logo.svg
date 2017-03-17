@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="48 80 174 66" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="300" height="100" viewBox="48 80 174 66" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style id="bx-google-fonts">
-      @font-face {
-        font-family: 'ABeeZee';
-        font-style: normal;
-        font-weight: 400;
-        src: local('ABeeZee'), local('ABeeZee-Regular'), url(https://fonts.gstatic.com/s/abeezee/v9/yTibYMDoFfqshd01j2jrvwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-      }
-      @font-face {
-        font-family: 'Advent Pro';
-        font-style: normal;
-        font-weight: 200;
-        src: local('Advent Pro ExtraLight'), local('AdventPro-ExtraLight'), url(https://fonts.gstatic.com/s/adventpro/v4/URTSSjIp0Wr-GrjxFdFWnPbbaTZmtPDRvp9xUdyvPg4.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-      }
-      @font-face {
-        font-family: 'Josefin Sans';
-        font-style: normal;
-        font-weight: 400;
-        src: local('Josefin Sans'), local('JosefinSans'), url(https://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5hampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-      }
+      @import url(https://fonts.googleapis.com/css?family=ABeeZee:400|Advent+Pro:200|Josefin+Sans:400);
     </style>
     <pattern id="pattern-0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" viewBox="0 0 100 100">
       <path d="M 0 0 L 50 0 L 50 100 L 0 100 Z" style="fill: black;"/>
@@ -46,5 +26,5 @@
   <path d="M 125.378 131.174 Z" style="stroke: black; fill: none;"/>
   <path d="M 149.53 126.344 Z" style="stroke: black; fill: none;"/>
   <path d="M 126.344 78.041 Z" style="stroke: black; fill: none;"/>
-  <use width="166.0937957763672" height="57.65629959106445" transform="matrix(1.0266133546829224, 0, 0, 1.053312301635742, -626.8179931640625, -84.35518646240233)" x="657.9531326293945" y="157.30469512939453" xlink:href="#symbol-0"/>
+  <use width="166.0937957763672" height="57.65629959106445" transform="matrix(1.0266133546829224, 0, 0, 1.053312301635742, -625.8179931640625, -84.35518646240233)" x="657.9531326293945" y="157.30469512939453" xlink:href="#symbol-0"/>
 </svg>
