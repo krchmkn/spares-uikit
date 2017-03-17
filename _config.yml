@@ -3,6 +3,3 @@ theme: jekyll-theme-minimal
 title: Spares
 description: 
 show_downloads: true
-
-github:
-  is_project_page: false
