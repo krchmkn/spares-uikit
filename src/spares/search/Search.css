@@ -5,3 +5,95 @@
 * @author Dmitri Korchemkin
 * @source https://github.com/korchemkin/spares-uikit
 */
+
+.spares-search-block,
+.spares-search-input,
+.spares-search-button {
+  box-sizing: border-box;
+
+  color: #333;
+
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: 400;
+
+  padding: 0;
+  margin: 0;
+}
+
+.spares-search-block,
+.spares-search-input {
+  display: block;
+  width: 100%;
+}
+
+.spares-search-block {
+  position: relative;
+
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+
+  height: 50px;
+}
+
+.spares-search-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: #fff;
+
+  padding: 10px 70px 10px 10px;
+  margin: 0 auto;
+
+  border: 0;
+
+  z-index: 1;
+}
+
+.spares-search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: 0;
+  padding: 12px 20px 10px 20px;
+
+  text-shadow: none;
+  box-shadow: none;
+
+  font-size: 13px;
+  line-height: 1;
+  text-align: center;
+
+  cursor: pointer;
+  outline: none;
+
+  background: #f4f4f4;
+  background: linear-gradient(to bottom,#fafafa,#f6f6f6,#f3f3f3);
+  color: #666;
+
+  border: 0;
+  border-left: 1px solid #eaeaea;
+
+  z-index: 2;
+}
+
+
+.spares-search-button:active {
+  background: #f4f4f4;
+  color: #097386;
+}
+
+.spares-search-button i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 0;
+}

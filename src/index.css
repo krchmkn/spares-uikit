@@ -32,8 +32,8 @@ body {
 .spares-demo-to-menu,
 a.spares-demo-to-menu {
   position: fixed;
-  bottom: 50px;
-  right: 80px;
+  bottom: 20px;
+  right: 20px;
   width: auto;
   background: #fff;
   color: #333;

@@ -65,7 +65,7 @@
 
 .spares-modal-button {
   cursor: pointer;
-  color: #4F8EF7;
+  color: #097386;
 }
 
 .spares-modal-button i {
@@ -81,6 +81,11 @@
   color: #c4c4c4;
   cursor: pointer;
   padding: 10px;
+}
+
+
+.spares-modal-close:active {
+  color: #097386;
 }
 
 .animate {

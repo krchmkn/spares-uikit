@@ -1,3 +1,11 @@
+/**
+*
+* Spares-uikit
+*
+* @author Dmitri Korchemkin
+* @source https://github.com/korchemkin/spares-uikit
+*/
+
 var block = require('./lib/block/Block');
 var button = require('./lib/button/Button');
 var header = require('./lib/header/Header');
@@ -15,6 +23,8 @@ var card = require('./lib/card/Card');
 var modal = require('./lib/modal/Modal');
 var nav = require('./lib/nav/Nav');
 var table = require('./lib/table/Table');
+var search = require('./lib/search/Search');
+var accordion = require('./lib/accordion/Accordion');
 
 
 module.exports = {
@@ -34,5 +44,7 @@ module.exports = {
   Card: card.default,
   Modal: modal.default,
   Nav: nav.default,
-  Table: table.default
+  Table: table.default,
+  Search: search.default,
+  Accordion: accordion.default
 };

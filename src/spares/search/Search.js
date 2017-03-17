@@ -12,9 +12,20 @@ import './Search.css';
 class Search extends Component {
   render() {
     return (
-      <div></div>
+      <div className="spares-search-block">
+        <input type="text" className="spares-search-input"
+                placeholder={this.props.placeholder} />
+        <button type="submit" className="spares-search-button">
+          <i className={this.props.buttonIcon}></i>
+        </button>
+      </div>
     );
   }
+}
+
+Search.propTypes = {
+  placeholder: React.PropTypes.string.isRequired,
+  buttonIcon: React.PropTypes.string.isRequired
 }
 
 export default Search;

@@ -13,7 +13,8 @@ import { Block, Button, Header, List,
         ListWithImage, Paragraph, ButtonsTwins,
         InputField, TextField, SelectField,
         Radio, Checkbox, Dropdown,
-        Card, Modal, Nav, Table } from '../spares';
+        Card, Modal, Nav, Table,
+        Search, Accordion } from '../spares';
 
 import './index.css';
 
@@ -148,7 +149,9 @@ ReactDOM.render(
           {link: '#ListWithImage', text: 'ListWithImage'},
           {link: '#Modal', text: 'Modal'},
           {link: '#Nav', text: 'Nav'},
-          {link: '#Table', text: 'Table'}
+          {link: '#Table', text: 'Table'},
+          {link: '#Search', text: 'Search'},
+          {link: '#Accordion', text: 'Accordion'}
         ]} />
       </Block>
     </div>
@@ -506,6 +509,42 @@ ReactDOM.render(
     </div>
 
     <br />
+
+    <div id="Search">
+      <Block>
+        <Header>Search</Header>
+      </Block>
+      <Block>
+        <form onSubmit={() => alert('Search submit')}>
+          <Search placeholder="Search"
+                  buttonIcon="icon ion-search" />
+        </form>
+      </Block>
+    </div>
+
+    <br />
+
+    <div id="Accordion">
+      <Block>
+        <Header>Accordion</Header>
+      </Block>
+      <Block>
+
+        <Accordion items={listItems}
+                    template={{
+                      header: 'name',
+                      body: 'description'
+                    }}
+                    icons={{
+                      open: 'icon ion-ios-minus-outline',
+                      close: 'icon ion-ios-plus-outline'
+                    }} />
+
+      </Block>
+    </div>
+
+    <br />
+
 
   </div>,
   document.getElementById('root')

@@ -1,0 +1,76 @@
+.spares-accordion,
+.spares-accordion-item,
+.spares-accordion-header,
+.spares-accordion-header-text,
+.spares-accordion-body,
+.spares-accordion-header-icon {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  color: #333;
+  background: none;
+
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: 400;
+  transition: all .3s ease;
+}
+
+.spares-accordion,
+.spares-accordion-item,
+.spares-accordion-header,
+.spares-accordion-header-text,
+.spares-accordion-body {
+  display: block;
+  width: 100%;
+}
+
+.spares-accordion,
+.spares-accordion-item {
+  list-style: none;
+}
+
+.spares-accordion {
+  padding-bottom: 25px;
+}
+
+.spares-accordion-item {
+  padding: 20px 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.spares-accordion-item:last-child {
+  border: 0;
+}
+
+.spares-accordion-header {
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+
+.spares-accordion-header-text {
+  font-size: 17px;
+}
+
+.spares-accordion-header-icon {
+  font-size: 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ddd;
+}
+
+.spares-accordion-item:hover .spares-accordion-header-icon,
+.spares-accordion-item.open .spares-accordion-header-text,
+.spares-accordion-item.open .spares-accordion-header-icon {
+  color: #097184;
+}
+
+.spares-accordion-body {
+  padding: 20px 0;
+}
