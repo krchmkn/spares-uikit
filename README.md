@@ -1,6 +1,6 @@
 ![spares-uikit](https://cdn.rawgit.com/korchemkin/spares-uikit/17dc1653/logo/spares-uikit-logo.svg)
 
-React.js uikit components with responsive design.
+[React](https://facebook.github.io/react/) uikit components with responsive design.
 
 ![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
