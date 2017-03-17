@@ -1,10 +1,8 @@
-# Spares-uikit
-
-![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
-
-### About
+# spares-uikit
 
 React.js uikit components with responsive design.
+
+![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 ### Demo
 
