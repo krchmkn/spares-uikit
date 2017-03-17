@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="48 80 174 66" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=ABeeZee:400,400italic|Advent+Pro:100,200,300,400,500,600,700|Josefin+Sans:100,100italic,300,300italic,400,400italic,600,600italic,700,700italic);</style>
+    <pattern id="pattern-0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" viewBox="0 0 100 100">
+      <path d="M 0 0 L 50 0 L 50 100 L 0 100 Z" style="fill: black;"/>
+    </pattern>
+    <linearGradient id="gradient-7" gradientUnits="userSpaceOnUse" x1="141.023" y1="106.063" x2="141.023" y2="151.453" gradientTransform="matrix(1, 0, 0, 1, 0.999968, 0)">
+      <stop offset="0" style="stop-color: rgba(9, 116, 135, 1)"/>
+      <stop offset="1" style="stop-color: rgb(8, 105, 122);"/>
+    </linearGradient>
+    <symbol id="symbol-0" viewBox="0 0 166.0938 57.6563">
+      <g transform="matrix(1.0000000000000002, 0, 0, 1.0000000000000002, -51.92187500000001, -83.1875)">
+        <g>
+          <text x="70.875" y="128.867" style="fill: url(#gradient-7); font-family: &quot;Josefin Sans&quot;; font-size: 48px; font-weight: 600; text-transform: lowercase; white-space: pre;">SPARES</text>
+        </g>
+        <text x="159.563" y="102.464" style="fill: rgb(204, 204, 204); font-family: &quot;Advent Pro&quot;; font-size: 20px; font-weight: 300; white-space: pre;">uikit</text>
+        <text x="51.923" y="129.683" style="fill: rgb(219, 72, 57); font-family: ABeeZee; font-size: 26px; white-space: pre;">&lt;</text>
+        <text x="193.425" y="129.717" style="fill: rgb(219, 72, 57); font-family: ABeeZee; font-size: 26px; letter-spacing: -2.7px; white-space: pre;">/&gt;</text>
+      </g>
+    </symbol>
+  </defs>
+  <path d="M 125.378 131.174 Z" style="stroke: black; fill: none;"/>
+  <path d="M 125.378 131.174 Z" style="stroke: black; fill: none;"/>
+  <path d="M 149.53 126.344 Z" style="stroke: black; fill: none;"/>
+  <path d="M 126.344 78.041 Z" style="stroke: black; fill: none;"/>
+  <use width="166.0937957763672" height="57.65629959106445" transform="matrix(1.0266133546829224, 0, 0, 1.053312301635742, -626.8179931640625, -84.35518646240233)" x="657.9531326293945" y="157.30469512939453" xlink:href="#symbol-0"/>
+</svg>
