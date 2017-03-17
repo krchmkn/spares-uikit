@@ -372,9 +372,12 @@ ReactDOM.render(
       </Block>
       <Block>
         <List items={listItems} template={[
-          [ {label: 'name', key: 'name'}, {label: 'name1', key: 'name'} ],
-          [ {label: 'description', key: 'description'} ],
-          [ {label: 'address', key: 'address'} ]
+          [
+            {label: 'name', key: 'name', icon: 'icon ion-ios-person-outline'},
+            {label: 'name1', key: 'name', icon: 'icon ion-ios-person-outline'}
+          ],
+          [ {label: 'description', key: 'description', icon: 'icon ion-android-list'} ],
+          [ {label: 'address', key: 'address', icon: 'icon ion-ios-location'} ]
         ]}/>
       </Block>
     </div>
@@ -392,10 +395,10 @@ ReactDOM.render(
             image: 'image',
             description: 'description',
             labels: [
-              {label: 'first line', key: 'label1'},
-              {label: 'second line', key: 'label2'},
-              {label: 'first line1', key: 'label1'},
-              {label: 'second line2', key: 'label2'}
+              {label: 'first line', key: 'label1', icon: 'icon ion-ios-person-outline'},
+              {label: 'second line', key: 'label2', icon: 'icon ion-android-list'},
+              {label: 'first line1', key: 'label1', icon: 'icon ion-ios-location'},
+              {label: 'second line2', key: 'label2', icon: 'icon ion-ios-person-outline'}
             ]
           }}/>
       </Block>

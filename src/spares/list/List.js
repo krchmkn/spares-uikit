@@ -22,7 +22,9 @@ class List extends Component {
               <div key={indx} className="spares-list-unit">
                 {val.map((v, i) =>
                   <div key={i} className="spares-list-unit-row">
-                    <span className="spares-list-label">{v.label}: </span>
+                    <span className="spares-list-label">
+                        <i className={v.icon}></i>
+                        {v.label}: </span>
                     <span>{item[v.key]}</span>
                   </div>
                 )}
@@ -41,7 +43,8 @@ List.propTypes = {
     React.PropTypes.arrayOf(
       React.PropTypes.shape({
         label: React.PropTypes.string.isRequired,
-        key: React.PropTypes.string.isRequired // key in items
+        key: React.PropTypes.string.isRequired, // key in items
+        icon: React.PropTypes.string
       })
     )
   )

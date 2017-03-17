@@ -41,7 +41,9 @@ class ListWithImage extends Component {
               <div className="spares-list-with-image-unit small">
                 {template.labels.map((t, i) =>
                   <div className="spares-list-with-image-unit-row" key={i}>
-                    <span className="spares-list-with-image-label">{t.label}: </span>
+                    <span className="spares-list-with-image-label">
+                      <i className={t.icon}></i>
+                      {t.label}: </span>
                     <span>{item[t.key]}</span>
                   </div>
                 )}
@@ -63,7 +65,8 @@ ListWithImage.propTypes = {
     labels: React.PropTypes.arrayOf(
       React.PropTypes.shape({
         label: React.PropTypes.string.isRequired,
-        key: React.PropTypes.string.isRequired // key in items
+        key: React.PropTypes.string.isRequired, // key in items
+        icon: React.PropTypes.string
       })
     )
   })

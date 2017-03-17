@@ -53,6 +53,12 @@
   padding-right: 10px;
 }
 
+.spares-list-label i {
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
 
 @media (max-width: 980px) {
   .spares-list-item {

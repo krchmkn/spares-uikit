@@ -83,6 +83,13 @@ a.spares-list-with-image-header {
   padding-right: 10px;
 }
 
+.spares-list-with-image-label i {
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
 .spares-list-with-image-description {
   margin: 0 0 25px 0;
   padding: 0;
