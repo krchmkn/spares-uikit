@@ -4,7 +4,7 @@
 
 ### About
 
-React.js uikit components.
+React.js uikit components with responsive design.
 
 ### Demo
 
