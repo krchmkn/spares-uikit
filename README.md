@@ -16,12 +16,7 @@ For information on use see project [wiki](https://github.com/korchemkin/spares-u
 
 ### Contributing
 
-1. Fork [repo](https://github.com/korchemkin/spares-uikit).
-2. Create new branch.
-3. Make your changes.
-4. Test you changes and add test files to branch.
-5. If you changed API, add updated wiki page (.asciidoc) to branch.
-6. Make pull request.
+[See guide](https://github.com/korchemkin/spares-uikit/blob/master/CONTRIBUTING.md)
 
 ### License
 
