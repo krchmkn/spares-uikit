@@ -15,5 +15,26 @@ Spares-uikit
   </head>
   <body>
     <div id="root"></div>
+
+
+    <script>
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('spares-map'), {
+          zoom: 17,
+                  center: {lat: 55.773111, lng: 49.113968}
+          });
+          var marker = new google.maps.Marker({
+          position: {lat: 55.773111, lng: 49.113968},
+            map: map
+          });
+        }
+
+        function getMap() {
+          var script = document.createElement('script');
+          script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAz4T255tOlwfSUCY_s71nOzWV6KE0BLOU&callback=initMap';
+          document.body.appendChild(script);
+        }
+    </script>
+
   </body>
 </html>

@@ -14,7 +14,7 @@ import { Block, Button, Header, List,
         InputField, TextField, SelectField,
         Radio, Checkbox, Dropdown,
         Card, Modal, Nav, Table,
-        Search, Accordion } from '../spares';
+        Search, Accordion, Map } from '../spares';
 
 import './index.css';
 import logo from '../logo/spares-uikit-logo.svg';
@@ -169,7 +169,8 @@ ReactDOM.render(
           {link: '#Table', text: 'Table'},
           {link: '#Search', text: 'Search'},
           {link: '#Accordion', text: 'Accordion'},
-          {link: '#Form', text: 'Form'}
+          {link: '#Form', text: 'Form'},
+          {link: '#Map', text: 'Map'}
         ]} />
       </Block>
     </div>
@@ -576,6 +577,14 @@ ReactDOM.render(
       </form>
     </div>
 
+    <div id="Map">
+      <Block>
+        <Header>Map</Header>
+      </Block>
+      <Block>
+        <Map whenMounted={window.getMap}>address</Map>
+      </Block>
+    </div>
 
   </div>,
   document.getElementById('root')
