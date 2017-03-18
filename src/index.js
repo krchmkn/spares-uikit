@@ -168,7 +168,8 @@ ReactDOM.render(
           {link: '#Nav', text: 'Nav'},
           {link: '#Table', text: 'Table'},
           {link: '#Search', text: 'Search'},
-          {link: '#Accordion', text: 'Accordion'}
+          {link: '#Accordion', text: 'Accordion'},
+          {link: '#Form', text: 'Form'}
         ]} />
       </Block>
     </div>
