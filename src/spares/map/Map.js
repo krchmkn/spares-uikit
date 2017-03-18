@@ -17,9 +17,11 @@ class Map extends Component {
   render() {
     return (
       <div className="spares-map-block">
-        <div className="spares-address-block">
-          {this.props.children}
-        </div>
+        {this.props.children ? (
+          <div className="spares-address-block">
+            {this.props.children}
+          </div>
+        ) : null}
         <div id="spares-map" className="spares-map"></div>
       </div>
     );
