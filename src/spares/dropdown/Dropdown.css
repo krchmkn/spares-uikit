@@ -131,3 +131,18 @@
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
 }
+
+
+@media(max-width: 980px) {
+  .spares-dropdown-block {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    margin-left: 0;
+  }
+
+  .spares-dropdown-block:before,
+  .spares-dropdown-block:after {
+    left: 10%;
+  }
+}

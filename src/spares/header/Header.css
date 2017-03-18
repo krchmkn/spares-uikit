@@ -10,7 +10,7 @@
   width: 100%;
   box-sizing: border-box;
 
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 10px 0 0 0;
 
   color: #333;
@@ -31,13 +31,13 @@
 
 h1.spares-header {
   font-size: 2rem;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   line-height: 35px;
 }
 
 h2.spares-header {
   font-size: 1.7rem;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   line-height: 28px;
 }
 

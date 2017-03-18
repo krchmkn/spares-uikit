@@ -106,7 +106,17 @@ a.spares-list-with-image-header {
   .spares-list-with-image-flex {
     flex-direction: column;
   }
-  .spares-list-with-image-unit {
+  .spares-list-with-image-unit,
+  .spares-list-with-image-unit.big,
+  .spares-list-with-image-unit.small {
     margin: 0;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .spares-list-with-image-pic {
+    width: auto;
+    margin: 0 auto;
+    display: block;
   }
 }

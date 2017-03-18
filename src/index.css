@@ -15,18 +15,16 @@ p {
 }
 
 body {
-  background: rgba(52, 73, 94, .2);
+  background: #086e80;
   padding-bottom: 25px;
   position: relative;
 }
 
-.spares-demo-menu {
-  background: #fff;
-  padding-top: 25px;
-  margin-bottom: 40px;
-  box-shadow: 1px 0 1px #333;
-  position: relative;
-  z-index: 1;
+.spares-demo-logo {
+  margin: 0 auto;
+  display: block;
+  width: auto;
+  margin-bottom: 25px;
 }
 
 .spares-demo-to-menu,

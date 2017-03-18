@@ -17,6 +17,7 @@ import { Block, Button, Header, List,
         Search, Accordion } from '../spares';
 
 import './index.css';
+import logo from '../logo/spares-uikit-logo.svg';
 
 const listItems = [{
     id: 1,
@@ -120,6 +121,23 @@ const tableItems = [{
   'wait':67.5342
 }];
 
+const submitFunc = function(event) {
+  let inputs = event.target.querySelectorAll('[data-valid]');
+  let form_valid = false;
+
+  for (let el of inputs) {
+    form_valid = (el.getAttribute('data-valid') === 'true');
+
+    if (form_valid === false) {
+      break;
+    }
+  }
+
+  if (form_valid) {
+    alert('Form submited');
+  }
+  event.preventDefault();
+};
 
 ReactDOM.render(
   <div>
@@ -129,11 +147,10 @@ ReactDOM.render(
       <i className="icon ion-arrow-up-a"></i>Menu
     </a>
 
-    <div id="pageHeader" className="spares-demo-menu">
-      <div>
-        <img src="" alt="" />
-      </div>
+    <div id="pageHeader">
       <Block>
+        <img src={logo} alt="spares-uikit" className="spares-demo-logo" />
+
         <Nav items={[
           {link: '#Blocks', text: 'Blocks'},
           {link: '#Typography', text: 'Typography'},
@@ -156,7 +173,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-
     <div id="Blocks">
       <Block>
         <Header>Blocks</Header>
@@ -165,31 +181,31 @@ ReactDOM.render(
       <Block>
         <Header small>Block</Header>
       </Block>
-      <Block>Lorem ipsum dolor sit amet,
+      <Block>
+        <p>Lorem ipsum dolor sit amet,
               consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua</Block>
+              labore et dolore magna aliqua</p></Block>
 
       <Block>
         <Header small>Block flex</Header>
       </Block>
       <Block flex>
-        <div>Lorem ipsum dolor sit amet,
+        <Paragraph>Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua</div>
-        <div>Lorem ipsum dolor sit amet,
+                labore et dolore magna aliqua</Paragraph>
+        <Paragraph>Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua</div>
-        <div> Lorem ipsum dolor sit amet,
+                labore et dolore magna aliqua</Paragraph>
+        <Paragraph> Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua</div>
+                labore et dolore magna aliqua</Paragraph>
       </Block>
     </div>
 
-    <br />
 
     <div id="Typography">
       <Block>
@@ -212,7 +228,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Card">
       <Block>
@@ -228,7 +243,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Buttons">
       <Block>
@@ -261,7 +275,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="InputField">
       <Block>
@@ -277,7 +290,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="SelectField">
       <Block>
@@ -296,7 +308,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="TextField">
       <Block>
@@ -312,7 +323,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Checkbox">
       <Block>
@@ -330,7 +340,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Radio">
       <Block>
@@ -348,7 +357,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Dropdown">
       <Block>
@@ -364,7 +372,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="List">
       <Block>
@@ -382,7 +389,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="ListWithImage">
       <Block>
@@ -404,7 +410,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Modal">
       <Block>
@@ -423,7 +428,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Nav">
       <Block>
@@ -450,7 +454,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Table">
       <Block>
@@ -511,7 +514,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Search">
       <Block>
@@ -525,7 +527,6 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
 
     <div id="Accordion">
       <Block>
@@ -546,7 +547,33 @@ ReactDOM.render(
       </Block>
     </div>
 
-    <br />
+
+    <div id="Form">
+      <form onSubmit={submitFunc}>
+        <Block>
+          <Header>Form</Header>
+        </Block>
+        <Block>
+          <InputField
+                label="Input field"
+                name="name"
+                placeholder="input digits"
+                pattern={/^\d+$/}
+                message="Only digits" />
+        </Block>
+        <Block>
+          <TextField
+              label="Enter text"
+              name="name"
+              placeholder="Enter 10 characters"
+              char_count={10}
+              message="Enter 10 characters" />
+        </Block>
+        <Block>
+          <Button submit>Submit</Button>
+        </Block>
+      </form>
+    </div>
 
 
   </div>,

@@ -13,18 +13,20 @@ class InputField extends Component {
   constructor(props) {
     super(props);
     this.testValue = this.testValue.bind(this);
-    this.state = {invalid: false};
+    this.state = {valid: false};
+    this.changed = false;
   };
 
   testValue(event) {
+    this.changed = true;
     if (event.target.value.length > 0) {
       if (this.props.pattern.test(event.target.value)) {
-        this.setState({invalid: false});
+        this.setState({valid: true});
       } else {
-        this.setState({invalid: true});
+        this.setState({valid: false});
       }
     } else {
-      this.setState({invalid: false});
+      this.setState({valid: false});
     }
   };
 
@@ -34,10 +36,11 @@ class InputField extends Component {
       type: 'text',
       name: this.props.name || '',
       placeholder: this.props.placeholder || '',
-      onChange: this.testValue
+      onChange: this.testValue,
+      'data-valid': this.state.valid
     };
 
-    if (this.state.invalid) {
+    if (!this.state.valid && this.changed) {
       inputProps.className += ' error';
     }
 
@@ -45,7 +48,7 @@ class InputField extends Component {
         <div className="spares-input-block">
           <label className="spares-input-label">{this.props.label}</label>
           <input {...inputProps} />
-          {this.state.invalid ? (<div className="spares-input-error">{this.props.message}</div>) : null}
+          {!this.state.valid && this.changed ? (<div className="spares-input-error">{this.props.message}</div>) : null}
         </div>
     );
   }

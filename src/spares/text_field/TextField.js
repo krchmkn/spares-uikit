@@ -13,17 +13,19 @@ class TextField extends Component {
   constructor(props) {
     super(props);
     this.testValue = this.testValue.bind(this);
-    this.state = {invalid: false};
+    this.state = {valid: false};
+    this.changed = false;
   };
 
   testValue(event) {
     let val = event.target.value;
     let props_len = parseInt(this.props.char_count, 10);
+    this.changed = true;
 
     if (val.length > props_len) {
-      this.setState({invalid: true});
+      this.setState({valid: false});
     } else {
-      this.setState({invalid: false});
+      this.setState({valid: true});
     }
   };
 
@@ -32,13 +34,14 @@ class TextField extends Component {
       className: 'spares-textarea',
       name: this.props.name || '',
       placeholder: this.props.placeholder || '',
+      'data-valid': this.state.valid
     };
 
     if (this.props.char_count) {
       inputProps.onChange = this.testValue;
     }
 
-    if (this.state.invalid) {
+    if (!this.state.valid && this.changed) {
       inputProps.className += ' error';
     }
 
@@ -46,7 +49,7 @@ class TextField extends Component {
         <div className="spares-textarea-block">
           <label className="spares-textarea-label">{this.props.label}</label>
           <textarea {...inputProps}></textarea>
-          {this.state.invalid ? (<div className="spares-textarea-error">{this.props.message}</div>) : null}
+          {!this.state.valid && this.changed ? (<div className="spares-textarea-error">{this.props.message}</div>) : null}
         </div>
     );
   }
