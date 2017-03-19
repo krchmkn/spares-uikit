@@ -592,14 +592,8 @@ ReactDOM.render(
         <Header>Toggle</Header>
       </Block>
       <Block>
-        <Toggle items={listItems}
-              template={{
-                name: 'toggle checkbox',
-                keysInItems: {
-                  value: 'name',
-                  text: 'address'
-                }
-              }} />
+        <Toggle name="toggle" label="toggle label" />
+        <Toggle name="toggle" label="toggle label" checked />
       </Block>
     </div>
 

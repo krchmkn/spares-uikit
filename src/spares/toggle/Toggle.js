@@ -9,11 +9,14 @@
 import React, { Component } from 'react';
 import './Toggle.css';
 
-class ToggleItem extends Component {
+class Toggle extends Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
-    this.state = {checked: false};
+    console.log(props)
+    this.state = {
+      checked: false
+    };
   }
 
   toggle() {
@@ -23,10 +26,6 @@ class ToggleItem extends Component {
   }
 
   render() {
-    let checkboxProps = {
-      className: 'spares-toggle-checkbox',
-      type: 'checkbox'
-    };
     let toggleProps = {
       className: this.state.checked ? 'spares-toggle-area checked' : 'spares-toggle-area',
       onClick: this.toggle,
@@ -34,38 +33,23 @@ class ToggleItem extends Component {
     };
 
     return (
-      <label className="spares-toggle-label">
-        <span {...toggleProps}>
-          <span className="spares-toggle"></span>
-        </span>
-        <span>{this.props.item[this.props.template.keysInItems.text]}</span>
-      </label>
-    );
-  };
-}
-
-class Toggle extends Component {
-  render() {
-    return (
       <div className="spares-toggle-block">
-        {this.props.items.map((item, index) =>
-          <ToggleItem key={index} item={item}
-                      template={this.props.template} />
-        )}
+        <label className="spares-toggle-label">
+          <span {...toggleProps}>
+            <span className="spares-toggle"></span>
+          </span>
+          <span>{this.props.label}</span>
+        </label>
       </div>
     );
   };
 }
 
 Toggle.propTypes = {
-  items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  template: React.PropTypes.shape({
-    name: React.PropTypes.string.isRequired,
-    keysInItems:  React.PropTypes.shape({
-      value: React.PropTypes.string.isRequired, // key in items
-      text: React.PropTypes.string.isRequired // key in items
-    })
-  })
+  name: React.PropTypes.string.isRequired,
+  label: React.PropTypes.string.isRequired,
+  checked: React.PropTypes.bool,
+  onchange: React.PropTypes.func
 };
 
 export default Toggle;
