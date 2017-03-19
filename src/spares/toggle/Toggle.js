@@ -9,11 +9,11 @@
 import React, { Component } from 'react';
 import './Toggle.css';
 
-class Toggle extends Component {
-  constructot(props) {
+class ToggleItem extends Component {
+  constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
-    this.state = {checked: false}
+    this.state = {checked: false};
   }
 
   toggle() {
@@ -28,32 +28,33 @@ class Toggle extends Component {
       type: 'checkbox'
     };
     let toggleProps = {
-      className: 'spares-toggle-area'
+      className: this.state.checked ? 'spares-toggle-area checked' : 'spares-toggle-area',
       onClick: this.toggle,
       'data-checked': this.state.checked
     };
 
-    if (this.state.checked) {
-      checkboxProps.checked = 'checked';
-      toggleProps.className = ' checked';
-    }
+    return (
+      <label className="spares-toggle-label">
+        <span {...toggleProps}>
+          <span className="spares-toggle"></span>
+        </span>
+        <span>{this.props.item[this.props.template.keysInItems.text]}</span>
+      </label>
+    );
+  };
+}
 
+class Toggle extends Component {
+  render() {
     return (
       <div className="spares-toggle-block">
         {this.props.items.map((item, index) =>
-          <label key={index} className="spares-toggle-label">
-            <span {...toggleProps}>
-              <span className="spares-toggle"></span>
-              <input {...checkboxProps}
-                    name={this.props.template.name}
-                    value={item[this.props.template.keysInItems.value]} />
-            </span>
-            <span>{item[this.props.template.keysInItems.text]}</span>
-          </label>
+          <ToggleItem key={index} item={item}
+                      template={this.props.template} />
         )}
       </div>
     );
-  }
+  };
 }
 
 Toggle.propTypes = {

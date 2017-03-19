@@ -594,7 +594,7 @@ ReactDOM.render(
       <Block>
         <Toggle items={listItems}
               template={{
-                name: 'checkbox',
+                name: 'toggle checkbox',
                 keysInItems: {
                   value: 'name',
                   text: 'address'

@@ -30,20 +30,27 @@
 
 .spares-toggle-area {
   position: relative;
-  width: ;
-  height: ;
+  display: inline-block;
+  width: 50px;
+  border-radius: 10px;
+  vertical-align: middle;
+  height: 20px;
   margin-right: 10px;
   background: #ddd;
   transition: all .3s ease;
+  cursor: pointer;
+  box-shadow: inset -3px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .spares-toggle {
   position: absolute;
-  top: 0;
+  top: -1px;
   bottom: 0;
+  border: 1px solid #ccc;
   left: 0;
-  width: ;
-  height: ;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
   transition: all .3s ease;
   background: #f4f4f4;
   background: linear-gradient(to bottom,#fafafa,#f6f6f6,#f3f3f3);
@@ -52,11 +59,12 @@
 }
 
 .spares-toggle-area.checked {
-  background: #086e80;
+  background: #529daa;
+  box-shadow: inset 3px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .spares-toggle-area.checked .spares-toggle {
-  left: 0;
+  left: 29px;
 }
 
 .spares-toggle-checkbox {
