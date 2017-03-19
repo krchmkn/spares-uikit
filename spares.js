@@ -26,6 +26,7 @@ var table = require('./lib/table/Table');
 var search = require('./lib/search/Search');
 var accordion = require('./lib/accordion/Accordion');
 var map = require('./lib/map/Map');
+var toggle = require('./lib/toggle/Toggle');
 
 module.exports = {
   Block: block.default,
@@ -47,5 +48,6 @@ module.exports = {
   Table: table.default,
   Search: search.default,
   Accordion: accordion.default,
-  Map: map.default
+  Map: map.default,
+  Toggle: toggle.default
 };

@@ -14,7 +14,7 @@ import { Block, Button, Header, List,
         InputField, TextField, SelectField,
         Radio, Checkbox, Dropdown,
         Card, Modal, Nav, Table,
-        Search, Accordion, Map } from '../spares';
+        Search, Accordion, Map, Toggle } from '../spares';
 
 import './index.css';
 import logo from '../logo/spares-uikit-logo.svg';
@@ -170,7 +170,8 @@ ReactDOM.render(
           {link: '#Search', text: 'Search'},
           {link: '#Accordion', text: 'Accordion'},
           {link: '#Form', text: 'Form'},
-          {link: '#Map', text: 'Map'}
+          {link: '#Map', text: 'Map'},
+          {link: '#Toggle', text: 'Toggle'}
         ]} />
       </Block>
     </div>
@@ -583,6 +584,22 @@ ReactDOM.render(
       </Block>
       <Block>
         <Map whenMounted={window.getMap}>address</Map>
+      </Block>
+    </div>
+
+    <div id="Toggle">
+      <Block>
+        <Header>Toggle</Header>
+      </Block>
+      <Block>
+        <Toggle items={listItems}
+              template={{
+                name: 'checkbox',
+                keysInItems: {
+                  value: 'name',
+                  text: 'address'
+                }
+              }} />
       </Block>
     </div>
 

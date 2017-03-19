@@ -1,0 +1,66 @@
+/**
+*
+* Spares-uikit
+*
+* @author Dmitri Korchemkin
+* @source https://github.com/korchemkin/spares-uikit
+*/
+
+.spares-toggle-block,
+.spares-toggle-label {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+
+  color: #333;
+
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: 400;
+
+  padding: 0;
+  margin: 0;
+}
+
+.spares-toggle-label {
+  margin-bottom: 10px;
+}
+
+.spares-toggle-area {
+  position: relative;
+  width: ;
+  height: ;
+  margin-right: 10px;
+  background: #ddd;
+  transition: all .3s ease;
+}
+
+.spares-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: ;
+  height: ;
+  transition: all .3s ease;
+  background: #f4f4f4;
+  background: linear-gradient(to bottom,#fafafa,#f6f6f6,#f3f3f3);
+  font-size: 0;
+  z-index: 1;
+}
+
+.spares-toggle-area.checked {
+  background: #086e80;
+}
+
+.spares-toggle-area.checked .spares-toggle {
+  left: 0;
+}
+
+.spares-toggle-checkbox {
+  display: none;
+  position: absolute;
+  z-index: -1;
+}

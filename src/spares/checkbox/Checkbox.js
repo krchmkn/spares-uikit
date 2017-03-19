@@ -20,10 +20,10 @@ class Checkbox extends Component {
         <div className="spares-checkbox-block">
           {this.props.items.map((item, index) =>
             <label key={index} className="spares-checkbox-label">
-            <input {...inputProps}
-                  name={this.props.template.name}
-                  value={item[this.props.template.keysInItems.value]} />
-              <span>{item[this.props.template.keysInItems.text]}</span>
+              <input {...inputProps}
+                    name={this.props.template.name}
+                    value={item[this.props.template.keysInItems.value]} />
+                <span>{item[this.props.template.keysInItems.text]}</span>
             </label>
           )}
         </div>
