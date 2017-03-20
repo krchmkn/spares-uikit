@@ -8,6 +8,12 @@
 
 [Spares-uikit demo page](https://korchemkin.github.io/spares-uikit/build/)
 
+### Installation
+
+```sh
+npm install spares-uikit --save
+```
+
 ### Usage
 
 For information on use see project [wiki](https://github.com/korchemkin/spares-uikit/wiki)
