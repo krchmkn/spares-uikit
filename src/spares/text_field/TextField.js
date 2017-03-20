@@ -23,9 +23,13 @@ class TextField extends Component {
     this.changed = true;
 
     if (val.length > props_len) {
-      this.setState({valid: false});
+      this.setState({valid: false}, () => {
+        this.props.onchange(this.state.valid);
+      });
     } else {
-      this.setState({valid: true});
+      this.setState({valid: true}, () => {
+        this.props.onchange(this.state.valid);
+      });
     }
   };
 
@@ -33,8 +37,7 @@ class TextField extends Component {
     let inputProps = {
       className: 'spares-textarea',
       name: this.props.name || '',
-      placeholder: this.props.placeholder || '',
-      'data-valid': this.state.valid
+      placeholder: this.props.placeholder || ''
     };
 
     if (this.props.char_count) {
@@ -61,6 +64,7 @@ TextField.propTypes = {
   char_count: React.PropTypes.number,
   message: React.PropTypes.string,
   placeholder: React.PropTypes.string,
+  onchange: React.PropTypes.func.isRequired
 }
 
 export default TextField;

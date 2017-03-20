@@ -13,7 +13,8 @@ class Checkbox extends Component {
   render() {
     let inputProps = {
       className: 'spares-checkbox',
-      type: 'checkbox'
+      type: 'checkbox',
+      onChange: this.props.onchange
     };
 
     return (
@@ -39,7 +40,8 @@ Checkbox.propTypes = {
       value: React.PropTypes.string.isRequired, // key in items
       text: React.PropTypes.string.isRequired // key in items
     })
-  })
+  }),
+  onchange: React.PropTypes.func.isRequired
 };
 
 export default Checkbox;

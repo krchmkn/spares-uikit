@@ -9,7 +9,8 @@ describe('<TextField />', () => {
                 name="name"
                 placeholder="Enter 150 characters"
                 char_count={150}
-                message="Enter 150 characters" />
+                message="Enter 150 characters"
+                onchange={(valid) => console.log('form InputField', valid)} />
     , div);
 
   it('renders <TextField /> without crashing', () => {
@@ -34,6 +35,10 @@ describe('<TextField />', () => {
 
   it('TextField message', () => {
     expect(textarea.props.message).toBeTruthy();
+  });
+
+  it('<TextField /> onchange', () => {
+    expect(typeof textarea.props.onchange).toBe('function');
   });
 
 });

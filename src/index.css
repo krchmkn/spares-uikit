@@ -15,7 +15,7 @@ p {
 }
 
 body {
-  background: #086e80;
+  background: #fff;
   padding-bottom: 300px;
   position: relative;
 }
@@ -39,10 +39,17 @@ a.spares-demo-to-menu {
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #ddd;
   font-size: 15px;
   z-index: 9999;
+  border: 1px solid #ddd;
+  transition: all .15s ease;
 }
+
+.spares-demo-to-menu:hover {
+  border-color: #097386;
+  color: #097386;
+}
+
 .spares-demo-to-menu i {
   margin-right: 5px;
   vertical-align: bottom;

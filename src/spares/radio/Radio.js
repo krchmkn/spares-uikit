@@ -13,7 +13,8 @@ class Radio extends Component {
   render() {
     let inputProps = {
       className: 'spares-radio',
-      type: 'radio'
+      type: 'radio',
+      onChange: this.props.onchange
     };
 
     return (
@@ -39,7 +40,8 @@ Radio.propTypes = {
       value: React.PropTypes.string.isRequired, // key in items
       text: React.PropTypes.string.isRequired // key in items
     })
-  })
+  }),
+  onchange: React.PropTypes.func.isRequired
 };
 
 

@@ -12,27 +12,32 @@ describe('<Radio />', () => {
               value: 'name',
               text: 'address'
             }
-          }} />
+          }}
+          onchange={(e) => console.log('Checkbox', e.target.value)}  />
       , div);;
 
   it('renders <Radio /> without crashing', () => {
     expect(radio).toBeTruthy();
   });
 
-  it('renders <Radio items={[]} />', () => {
+  it('<Radio items={[]} />', () => {
     expect(radio.props.items).toBeTruthy();
   });
 
-  it('renders <Radio template={[]} />', () => {
+  it('<Radio template={[]} />', () => {
     expect(radio.props.template).toBeTruthy();
   });
 
-  it('renders <Radio /> template.name', () => {
+  it('<Radio /> template.name', () => {
     expect(radio.props.template.name).toBeTruthy();
   });
 
-  it('renders <Radio /> template.name', () => {
+  it('<Radio /> template.name', () => {
     expect(radio.props.template.keysInItems).toBeTruthy();
+  });
+
+  it('<Radio /> onchange', () => {
+    expect(typeof radio.props.onchange).toBe('function');
   });
 
 });

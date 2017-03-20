@@ -21,12 +21,18 @@ class InputField extends Component {
     this.changed = true;
     if (event.target.value.length > 0) {
       if (this.props.pattern.test(event.target.value)) {
-        this.setState({valid: true});
+        this.setState({valid: true}, () => {
+          this.props.onchange(this.state.valid);
+        });
       } else {
-        this.setState({valid: false});
+        this.setState({valid: false}, () => {
+          this.props.onchange(this.state.valid);
+        });
       }
     } else {
-      this.setState({valid: false});
+      this.setState({valid: false}, () => {
+        this.props.onchange(this.state.valid);
+      });
     }
   };
 
@@ -36,8 +42,7 @@ class InputField extends Component {
       type: 'text',
       name: this.props.name || '',
       placeholder: this.props.placeholder || '',
-      onChange: this.testValue,
-      'data-valid': this.state.valid
+      onChange: this.testValue
     };
 
     if (!this.state.valid && this.changed) {
@@ -60,6 +65,7 @@ InputField.propTypes = {
   pattern: React.PropTypes.any.isRequired,
   message: React.PropTypes.string.isRequired,
   placeholder: React.PropTypes.string,
+  onchange: React.PropTypes.func.isRequired
 }
 
 export default InputField;

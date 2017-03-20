@@ -121,24 +121,6 @@ const tableItems = [{
   'wait':67.5342
 }];
 
-const submitFunc = function(event) {
-  let inputs = event.target.querySelectorAll('[data-valid]');
-  let form_valid = false;
-
-  for (let el of inputs) {
-    form_valid = (el.getAttribute('data-valid') === 'true');
-
-    if (form_valid === false) {
-      break;
-    }
-  }
-
-  if (form_valid) {
-    alert('Form submited');
-  }
-  event.preventDefault();
-};
-
 ReactDOM.render(
   <div>
 
@@ -289,7 +271,8 @@ ReactDOM.render(
               name="name"
               placeholder="I'm placeholder"
               pattern={/^\d+$/}
-              message="Only digits" />
+              message="Only digits"
+              onchange={(valid) => console.log('InputField', valid)} />
       </Block>
     </div>
 
@@ -302,7 +285,7 @@ ReactDOM.render(
         <SelectField
             label="Select"
             name="select_name"
-            onchange={() => alert('Spares-uikit: SelectField')}
+            onchange={(e) => alert(e.target.value)}
             items={[
               {value: 'value1', text: 'value 1'},
               {value: 2, text: 2},
@@ -322,7 +305,8 @@ ReactDOM.render(
             name="name"
             placeholder="Enter 150 characters"
             char_count={150}
-            message="Enter 150 characters" />
+            message="Enter 150 characters"
+            onchange={(valid) => console.log('TextField', valid)} />
       </Block>
     </div>
 
@@ -339,7 +323,8 @@ ReactDOM.render(
                   value: 'name',
                   text: 'address'
                 }
-              }} />
+              }}
+              onchange={(e) => console.log('Checkbox', e.target.value)} />
       </Block>
     </div>
 
@@ -356,7 +341,8 @@ ReactDOM.render(
                   value: 'name',
                   text: 'address'
                 }
-              }} />
+              }}
+              onchange={(e) => console.log('Radio', e.target.value)} />
       </Block>
     </div>
 
@@ -552,7 +538,7 @@ ReactDOM.render(
 
 
     <div id="Form">
-      <form onSubmit={submitFunc}>
+      <form>
         <Block>
           <Header>Form</Header>
         </Block>
@@ -562,7 +548,8 @@ ReactDOM.render(
                 name="name"
                 placeholder="input digits"
                 pattern={/^\d+$/}
-                message="Only digits" />
+                message="Only digits"
+                onchange={(valid) => console.log('form InputField', valid)}/>
         </Block>
         <Block>
           <TextField
@@ -570,7 +557,8 @@ ReactDOM.render(
               name="name"
               placeholder="Enter 10 characters"
               char_count={10}
-              message="Enter 10 characters" />
+              message="Enter 10 characters"
+              onchange={(valid) => console.log('form TextField', valid)} />
         </Block>
         <Block>
           <Button submit>Submit</Button>
