@@ -19,3 +19,5 @@ CONTRIBUTING.md
 .DS_Store
 
 npm-debug.log
+
+_config.yml
