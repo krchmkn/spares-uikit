@@ -24,11 +24,15 @@ class TextField extends Component {
 
     if (val.length > props_len) {
       this.setState({valid: false}, () => {
-        this.props.onchange(this.state.valid);
+        if (this.props.onchange) {
+          this.props.onchange(this.state.valid);
+        } 
       });
     } else {
       this.setState({valid: true}, () => {
-        this.props.onchange(this.state.valid);
+        if (this.props.onchange) {
+          this.props.onchange(this.state.valid);
+        } 
       });
     }
   };
