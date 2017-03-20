@@ -13,34 +13,32 @@ class Toggle extends Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
-    console.log(props)
     this.state = {
-      checked: false
+      checked: props.checked
     };
   }
 
-  toggle() {
+  toggle(e) {
     this.setState({
       checked: !this.state.checked
+    }, () => {
+      this.props.onchange(this.state.checked);
     });
   }
 
   render() {
     let toggleProps = {
-      className: this.state.checked ? 'spares-toggle-area checked' : 'spares-toggle-area',
-      onClick: this.toggle,
-      'data-checked': this.state.checked
+      className: this.state.checked ? 'spares-toggle checked' : 'spares-toggle',
+      onClick: this.toggle
     };
 
     return (
-      <div className="spares-toggle-block">
-        <label className="spares-toggle-label">
-          <span {...toggleProps}>
-            <span className="spares-toggle"></span>
-          </span>
-          <span>{this.props.label}</span>
-        </label>
-      </div>
+      <label {...toggleProps}>
+        <span className="spares-trigger-area">
+          <span className="spares-trigger"></span>
+        </span>
+        <span className="spares-toggle-label">{this.props.label}</span>
+      </label>
     );
   };
 }
@@ -49,7 +47,7 @@ Toggle.propTypes = {
   name: React.PropTypes.string.isRequired,
   label: React.PropTypes.string.isRequired,
   checked: React.PropTypes.bool,
-  onchange: React.PropTypes.func
+  onchange: React.PropTypes.func.isRequired
 };
 
 export default Toggle;

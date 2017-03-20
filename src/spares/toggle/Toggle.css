@@ -6,8 +6,7 @@
 * @source https://github.com/korchemkin/spares-uikit
 */
 
-.spares-toggle-block,
-.spares-toggle-label {
+.spares-toggle {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -21,14 +20,10 @@
   font-weight: 400;
 
   padding: 0;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
-.spares-toggle-label {
-  margin-bottom: 10px;
-}
-
-.spares-toggle-area {
+.spares-trigger-area {
   position: relative;
   display: inline-block;
   width: 50px;
@@ -37,12 +32,12 @@
   height: 20px;
   margin-right: 10px;
   background: #ddd;
-  transition: all .3s ease;
+  transition: all .15s ease;
   cursor: pointer;
   box-shadow: inset -3px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.spares-toggle {
+.spares-trigger {
   position: absolute;
   top: -1px;
   bottom: 0;
@@ -51,24 +46,18 @@
   border-radius: 10px;
   width: 20px;
   height: 20px;
-  transition: all .3s ease;
+  transition: all .15s ease;
   background: #f4f4f4;
   background: linear-gradient(to bottom,#fafafa,#f6f6f6,#f3f3f3);
   font-size: 0;
   z-index: 1;
 }
 
-.spares-toggle-area.checked {
+.spares-toggle.checked .spares-trigger-area {
   background: #529daa;
   box-shadow: inset 3px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.spares-toggle-area.checked .spares-toggle {
+.spares-toggle.checked .spares-trigger {
   left: 29px;
-}
-
-.spares-toggle-checkbox {
-  display: none;
-  position: absolute;
-  z-index: -1;
 }
