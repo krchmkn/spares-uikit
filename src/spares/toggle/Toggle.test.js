@@ -15,10 +15,6 @@ describe('<Toggle />', () => {
     expect(toggle).toBeTruthy();
   });
 
-  it('renders <Toggle name />', () => {
-    expect(toggle.props.name).toBeTruthy();
-  });
-
   it('renders <Toggle label />', () => {
     expect(toggle.props.label).toBeTruthy();
   });

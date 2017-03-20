@@ -44,7 +44,6 @@ class Toggle extends Component {
 }
 
 Toggle.propTypes = {
-  name: React.PropTypes.string.isRequired,
   label: React.PropTypes.string.isRequired,
   checked: React.PropTypes.bool,
   onchange: React.PropTypes.func.isRequired

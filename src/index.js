@@ -581,13 +581,11 @@ ReactDOM.render(
         <Header>Toggle</Header>
       </Block>
       <Block>
-        <Toggle name="toggle1"
-                label="toggle label 1"
+        <Toggle label="toggle label 1"
                 checked
                 onchange={(checked) => { console.log('toggle 1', checked) }}/>
 
-        <Toggle name="toggle2"
-                label="toggle label 2"
+        <Toggle label="toggle label 2"
                 onchange={(checked) => { console.log('toggle 2', checked) }} />
       </Block>
     </div>
