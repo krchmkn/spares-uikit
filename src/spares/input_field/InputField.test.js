@@ -6,6 +6,7 @@ describe('<InputField />', () => {
   const div = document.createElement('div');
   const input = ReactDOM.render(
     <InputField label="Input field"
+                type="text"
                 name="name"
                 placeholder="input digits"
                 pattern={/^\d+$/}
@@ -17,24 +18,28 @@ describe('<InputField />', () => {
     expect(input).toBeTruthy();
   });
 
-  it('<InputField label="" />', () => {
+  it('<InputField label />', () => {
     expect(input.props.label).toBeTruthy();
   });
 
-  it('<InputField name="" />', () => {
+  it('<InputField name />', () => {
     expect(input.props.name).toBeTruthy();
   });
 
-  it('<InputField ="" />', () => {
+  it('<InputField placeholder />', () => {
     expect(input.props.placeholder).toBeTruthy();
   });
 
-  it('<InputField ="" />', () => {
+  it('<InputField pattern />', () => {
     expect(input.props.pattern).toBeTruthy();
   });
 
-  it('<InputField ="" />', () => {
+  it('<InputField message />', () => {
     expect(input.props.message).toBeTruthy();
+  });
+
+  it('<InputField type />', () => {
+    expect(input.props.type).toBeTruthy();
   });
 
   it('<InputField /> onchange', () => {

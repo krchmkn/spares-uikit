@@ -39,7 +39,7 @@ class InputField extends Component {
   render() {
     let inputProps = {
       className: 'spares-input',
-      type: 'text',
+      type: this.props.type,
       name: this.props.name || '',
       placeholder: this.props.placeholder || '',
       onChange: this.testValue
@@ -65,7 +65,8 @@ InputField.propTypes = {
   pattern: React.PropTypes.any.isRequired,
   message: React.PropTypes.string.isRequired,
   placeholder: React.PropTypes.string,
-  onchange: React.PropTypes.func.isRequired
+  onchange: React.PropTypes.func,
+  type: React.PropTypes.string.isRequired
 }
 
 export default InputField;

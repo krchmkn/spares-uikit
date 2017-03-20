@@ -269,6 +269,7 @@ ReactDOM.render(
         <InputField
               label="Input digits"
               name="name"
+              type="text"
               placeholder="I'm placeholder"
               pattern={/^\d+$/}
               message="Only digits"

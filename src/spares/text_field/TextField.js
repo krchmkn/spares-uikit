@@ -64,7 +64,7 @@ TextField.propTypes = {
   char_count: React.PropTypes.number,
   message: React.PropTypes.string,
   placeholder: React.PropTypes.string,
-  onchange: React.PropTypes.func.isRequired
+  onchange: React.PropTypes.func
 }
 
 export default TextField;
