@@ -2,7 +2,9 @@
 
 [React](https://facebook.github.io/react/) uikit components with responsive design.
 
-![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg) [![npm version](https://badge.fury.io/js/spares-uikit.svg)](https://badge.fury.io/js/spares-uikit)
+![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
+[![NPM](https://nodei.co/npm/spares-uikit.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/spares-uikit/)
+
 
 ### Demo
 
