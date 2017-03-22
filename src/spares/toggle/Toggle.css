@@ -59,5 +59,6 @@
 }
 
 .spares-toggle.checked .spares-trigger {
-  left: 29px;
+  will-change: auto;
+  transform: translate(29px, 0);
 }

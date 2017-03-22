@@ -124,6 +124,7 @@
 .zoomIn {
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
+    will-change: auto;
 }
 
 @media (max-width: 600px) {

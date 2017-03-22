@@ -128,6 +128,45 @@ a.spares-menu-item-link {
   vertical-align: middle;
 }
 
+.animate {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        z-index: -1;
+    }
+    to {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        z-index: -1;
+    }
+    to {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    will-change: auto;
+}
+
 @media(max-width: 980px) {
   .spares-submenu {
     position: relative;

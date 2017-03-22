@@ -130,6 +130,7 @@
 .zoomIn {
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
+    will-change: auto;
 }
 
 

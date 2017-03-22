@@ -151,7 +151,6 @@ ReactDOM.render(
           {link: '#Table', text: 'Table'},
           {link: '#Search', text: 'Search'},
           {link: '#Accordion', text: 'Accordion'},
-          {link: '#Form', text: 'Form'},
           {link: '#Map', text: 'Map'},
           {link: '#Toggle', text: 'Toggle'}
         ]} />
@@ -535,36 +534,6 @@ ReactDOM.render(
                     }} />
 
       </Block>
-    </div>
-
-
-    <div id="Form">
-      <form>
-        <Block>
-          <Header>Form</Header>
-        </Block>
-        <Block>
-          <InputField
-                label="Input field"
-                name="name"
-                placeholder="input digits"
-                pattern={/^\d+$/}
-                message="Only digits"
-                onchange={(valid) => console.log('form InputField', valid)}/>
-        </Block>
-        <Block>
-          <TextField
-              label="Enter text"
-              name="name"
-              placeholder="Enter 10 characters"
-              char_count={10}
-              message="Enter 10 characters"
-              onchange={(valid) => console.log('form TextField', valid)} />
-        </Block>
-        <Block>
-          <Button submit>Submit</Button>
-        </Block>
-      </form>
     </div>
 
     <div id="Map">
