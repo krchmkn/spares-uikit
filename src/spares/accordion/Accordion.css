@@ -36,11 +36,13 @@
 
 .spares-accordion {
   padding-bottom: 25px;
+  will-change: auto;
 }
 
 .spares-accordion-item {
   padding: 20px 10px;
   border-bottom: 1px solid #ebebeb;
+  will-change: auto;
 }
 
 .spares-accordion-item:last-child {

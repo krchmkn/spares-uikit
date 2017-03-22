@@ -31,12 +31,14 @@ a.spares-menu-item-link {
 
 .spares-nav {
   padding-bottom: 25px;
+  will-change: auto;
 }
 
 .spares-menu {
   font-size: 0;
   display: block;
   list-style: none;
+  will-change: auto;
 }
 
 .spares-menu-item {

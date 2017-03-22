@@ -33,6 +33,7 @@
   background: none;
   display: inline-block;
   width: auto;
+  will-change: auto;
 }
 
 .spares-dropdown-block {
