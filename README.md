@@ -1,9 +1,12 @@
-![spares-uikit](https://cdn.rawgit.com/korchemkin/spares-uikit/17dc1653/logo/spares-uikit-logo.svg)
 
-[React](https://facebook.github.io/react/) uikit components with responsive design.
-
-![build passing](https://img.shields.io/badge/build-passing-brightgreen.svg) [![npm version](https://badge.fury.io/js/spares-uikit.svg?22-03)](https://badge.fury.io/js/spares-uikit?22-03)
-
+<p align="center">
+   <img alt="spares-uikit" src="https://cdn.rawgit.com/korchemkin/spares-uikit/17dc1653/logo/spares-uikit-logo.svg">
+   <br><span>React uikit components with responsive design.</span>
+</p>
+<p align="center">
+   <img alt="build passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+   <img alt="npm version" src="https://badge.fury.io/js/spares-uikit.svg?22-03)](https://badge.fury.io/js/spares-uikit?22-03">
+</p>
 
 ### Demo
 
