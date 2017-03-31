@@ -5,7 +5,7 @@
   "main": "spares.js",
   "scripts": {
     "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "build": "babel src/spares --out-dir lib --source-maps inline --copy-files",
     "demo": "react-scripts build"
