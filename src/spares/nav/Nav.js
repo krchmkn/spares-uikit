@@ -53,9 +53,9 @@ class NavItem extends Component {
         {this.props.data.link ? (
           <a href={this.props.data.link}
               title={this.props.data.text}
-              className="spares-menu-item-link">{this.props.data.text}</a>
+              {...linkClassList}>{this.props.data.text}</a>
         ) : (
-          <span className="spares-menu-item-link"
+          <span {...linkClassList}
               onClick={this.toggle}>
             {this.props.data.text}
             <i className={this.props.dropdownIcon}></i>
@@ -90,7 +90,7 @@ class Nav extends Component {
           <ul className="spares-menu">
             {this.props.items.map((item, index) =>
               <li key={index} className="spares-menu-item">
-                {window.location.pathname === item.link ? (
+                {window.location.hash === item.link ? (
                   <NavItem data={item} 
                             dropdownIcon={this.props.dropdownIcon} 
                             active />
@@ -106,6 +106,7 @@ class Nav extends Component {
     );
   }
 }
+
 
 Nav.propTypes = {
   items: React.PropTypes.arrayOf(
