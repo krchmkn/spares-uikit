@@ -40,6 +40,14 @@ class NavItem extends Component {
   }
 
   render() {
+    let linkClassList = {
+      className: 'spares-menu-item-link'
+    };
+
+    if (this.props.active) {
+      linkClassList.className += ' active';
+    }
+
     return (
       <div onMouseLeave={this.close}>
         {this.props.data.link ? (
@@ -58,12 +66,12 @@ class NavItem extends Component {
           <div>
             {this.state.open ? (
               <ul className="spares-submenu animate zoomIn">
-                {this.props.data.submenu.map((sub, i) =>
+                {this.props.data.submenu.map((sub, i) => 
                   <li className="spares-submenu-item"
                       key={i}>
                     <a href={sub.link}
                         title={sub.text}
-                        className="spares-menu-item-link">{sub.text}</a>
+                        {...linkClassList}>{sub.text}</a>
                   </li>
                 )}
               </ul>
@@ -82,7 +90,15 @@ class Nav extends Component {
           <ul className="spares-menu">
             {this.props.items.map((item, index) =>
               <li key={index} className="spares-menu-item">
-                  <NavItem data={item} dropdownIcon={this.props.dropdownIcon}/>
+                {window.location.pathname === item.link ? (
+                  <NavItem data={item} 
+                            dropdownIcon={this.props.dropdownIcon} 
+                            active />
+                  ) : (
+                    <NavItem data={item} 
+                              dropdownIcon={this.props.dropdownIcon} />
+                  )
+                }
               </li>
             )}
           </ul>

@@ -5,7 +5,7 @@
 </p>
 <p align="center">
    <img alt="build passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
-   <img alt="npm version" src="https://badge.fury.io/js/spares-uikit.svg?22-03)](https://badge.fury.io/js/spares-uikit?22-03">
+   <img alt="npm version" src="https://badge.fury.io/js/spares-uikit.svg?04-04)](https://badge.fury.io/js/spares-uikit?04-04">
 </p>
 
 ### Demo

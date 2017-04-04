@@ -19,8 +19,14 @@ class InputField extends Component {
 
   testValue(event) {
     this.changed = true;
-    if (event.target.value.length > 0) {
-      if (this.props.pattern.test(event.target.value)) {
+    let input_value = event.target.value;
+
+    if (typeof String.prototype.trim === 'function') {
+      input_value = event.target.value.trim()
+    }
+    
+    if (input_value.length > 0) {
+      if (this.props.pattern.test(input_value)) {
         this.setState({valid: true}, () => {
           if (this.props.onchange) {
             this.props.onchange(this.state.valid);
