@@ -90,7 +90,7 @@ class Nav extends Component {
           <ul className="spares-menu">
             {this.props.items.map((item, index) =>
               <li key={index} className="spares-menu-item">
-                {window.location.hash === item.link ? (
+                {window.location.pathname === item.link ? (
                   <NavItem data={item} 
                             dropdownIcon={this.props.dropdownIcon} 
                             active />
