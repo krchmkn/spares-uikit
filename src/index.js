@@ -509,7 +509,7 @@ ReactDOM.render(
         <Header>Search</Header>
       </Block>
       <Block>
-        <form onSubmit={() => alert('Search submit')}>
+        <form onSubmit={(event) => alert(event.target.search.value)}>
           <Search placeholder="Search"
                   buttonIcon="icon ion-search" />
         </form>

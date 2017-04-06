@@ -13,7 +13,7 @@ class Search extends Component {
   render() {
     return (
       <div className="spares-search-block">
-        <input type="text" className="spares-search-input"
+        <input type="text" name="search" className="spares-search-input"
                 placeholder={this.props.placeholder} />
         <button type="submit" className="spares-search-button">
           <i className={this.props.buttonIcon}></i>
