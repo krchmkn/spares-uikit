@@ -4,9 +4,12 @@ import Modal from './Modal';
 
 describe('<Modal />', () => {
   const div = document.createElement('div');
-  const modal = ReactDOM.render(<Modal header="Modal"
-                          buttonText="openModal"
-                          closeIcon="class"  />, div);
+  const modal = ReactDOM.render(
+  <Modal header="Modal" closeIcon="class">
+      <div></div>
+      <div></div>
+      <div></div>
+  </Modal>, div);
 
   it('renders <Modal /> without crashing', () => {
     expect(modal).toBeTruthy();
@@ -14,10 +17,6 @@ describe('<Modal />', () => {
 
   it('Modal header', () => {
     expect(modal.props.header).toBeTruthy();
-  });
-
-  it('Modal buttonText', () => {
-    expect(modal.props.buttonText).toBeTruthy();
   });
 
   it('Modal closeIcon', () => {

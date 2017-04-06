@@ -63,6 +63,15 @@
   padding: 20px;
 }
 
+.spares-modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 1px solid #ececec;
+}
+
 .spares-modal-button {
   cursor: pointer;
   color: #097386;

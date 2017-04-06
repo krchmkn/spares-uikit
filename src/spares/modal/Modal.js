@@ -27,11 +27,13 @@ class Modal extends Component {
   }
 
   render() {
+    const childrens = this.props.children || [null, null, null];
+
     return (
       <div>
         <div className="spares-modal-button"
               onClick={this.toggle}>
-          {this.props.buttonText}
+          {childrens[0]}
         </div>
 
         {this.state.open ? (
@@ -45,7 +47,12 @@ class Modal extends Component {
                 </span>
               </div>
               <div className="spares-modal-body">
-                {this.props.children}
+                {childrens[1]}
+              </div>
+              <div className="spares-modal-footer">
+                <div onClick={this.toggle}>
+                  {childrens[2]}
+                </div>
               </div>
             </div>
           </div>
@@ -57,8 +64,8 @@ class Modal extends Component {
 
 Modal.propTypes = {
   header: React.PropTypes.string.isRequired,
-  buttonText: React.PropTypes.string.isRequired,
-  closeIcon: React.PropTypes.string
+  closeIcon: React.PropTypes.string,
+  children: React.PropTypes.arrayOf(React.PropTypes.element).isRequired
 }
 
 export default Modal;

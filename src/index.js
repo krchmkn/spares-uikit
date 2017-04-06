@@ -405,14 +405,23 @@ ReactDOM.render(
         <Header>Modal</Header>
       </Block>
       <Block>
-          <Modal header="Modal"
-                  buttonText="Оpen мodal"
-                  closeIcon="icon ion-close">
+          <Modal header="Modal" closeIcon="icon ion-close">
+
+            <div>
+              <Button>Open modal</Button>
+            </div>
+
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
               address: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </div>
+
+            <div>
+              <Button>Cancel</Button>
+              <Button color="primary" onclick={ () => alert('ok') }>Ok</Button>
+            </div>
+
           </Modal>
       </Block>
     </div>
