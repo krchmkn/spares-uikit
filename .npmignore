@@ -23,3 +23,5 @@ npm-debug.log
 _config.yml
 
 coverage
+
+.travis.yml
