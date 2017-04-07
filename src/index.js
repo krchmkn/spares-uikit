@@ -33,14 +33,14 @@ const listItems = [{
 
 const listWithImageItems = [{
     name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    pageLink: '/pagelink',
+    pagelink: '/pagelink',
     image: 'https://cdn.worldvectorlogo.com/logos/react.svg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     label1: 'text1',
     label2: 'text2'
   }, {
     name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    pageLink: '/pagelink',
+    pagelink: '/pagelink',
     image: 'https://cdn.worldvectorlogo.com/logos/react.svg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     label1: 'text3',

@@ -19,7 +19,7 @@ class ListWithImage extends Component {
         {items.map((item, index) =>
           <li className="spares-list-with-image-item" key={index}>
               <div className="spares-list-with-image-unit big">
-                <a href="{item[template.pageLink]}"
+                <a href={item[template.pageLink]}
                     target="_blank"
                     className="spares-list-with-image-header">
                   {item[template.header]}
