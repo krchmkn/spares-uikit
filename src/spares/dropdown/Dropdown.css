@@ -47,6 +47,7 @@
   border-radius: 4px;
   padding: 3px 10px;
   border: 1px solid rgba(34,36,38,.1);
+  z-index: 900;
 }
 
 
@@ -111,7 +112,7 @@
     }
     to {
         opacity: 1;
-        z-index: 1;
+        z-index: 900;
     }
 }
 
@@ -124,7 +125,7 @@
     }
     to {
         opacity: 1;
-        z-index: 1;
+        z-index: 900;
     }
 }
 
