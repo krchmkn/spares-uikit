@@ -4,7 +4,7 @@
    <br><span>React uikit components with responsive design.</span>
 </p>
 <p align="center">
-   <img alt="build passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+   <img alt="build status" src="https://travis-ci.org/korchemkin/spares-uikit.svg?branch=master">
    <img alt="npm version" src="https://badge.fury.io/js/spares-uikit.svg?04-04)](https://badge.fury.io/js/spares-uikit?04-04">
 </p>
 
