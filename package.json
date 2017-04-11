@@ -1,6 +1,6 @@
 {
   "name": "spares-uikit",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "React uikit components with responsive design.",
   "main": "spares.js",
   "scripts": {

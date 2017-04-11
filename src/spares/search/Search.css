@@ -27,6 +27,7 @@
 .spares-search-input {
   display: block;
   width: 100%;
+  min-width: 200px;
 }
 
 .spares-search-block {
