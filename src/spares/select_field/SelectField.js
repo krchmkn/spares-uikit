@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './SelectField.css';
 
 class SelectField extends Component {
@@ -50,15 +51,15 @@ class SelectField extends Component {
 }
 
 SelectField.propTypes = {
-  items: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      value: React.PropTypes.any.isRequired,
-      text: React.PropTypes.any.isRequired
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.any.isRequired,
+      text: PropTypes.any.isRequired
     })
   ),
-  label: React.PropTypes.string.isRequired,
-  onchange: React.PropTypes.func.isRequired,
-  name: React.PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  onchange: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired
 }
 
 export default SelectField;

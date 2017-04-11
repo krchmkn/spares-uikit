@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './List.css';
 
 class List extends Component {
@@ -38,13 +39,13 @@ class List extends Component {
 }
 
 List.propTypes = {
-  items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  template: React.PropTypes.arrayOf(
-    React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        label: React.PropTypes.string.isRequired,
-        key: React.PropTypes.string.isRequired, // key in items
-        icon: React.PropTypes.string
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  template: PropTypes.arrayOf(
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        key: PropTypes.string.isRequired, // key in items
+        icon: PropTypes.string
       })
     )
   )

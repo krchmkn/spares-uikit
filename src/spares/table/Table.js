@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Table.css';
 
 class Table extends Component {
@@ -163,21 +164,21 @@ class Table extends Component {
 }
 
 Table.propTypes = {
-  head: React.PropTypes.arrayOf(
-    React.PropTypes.arrayOf(
-      React.PropTypes.arrayOf(
-        React.PropTypes.shape({
-          text: React.PropTypes.string.isRequired,
-          sort: React.PropTypes.string
+  head: PropTypes.arrayOf(
+    PropTypes.arrayOf(
+      PropTypes.arrayOf(
+        PropTypes.shape({
+          text: PropTypes.string.isRequired,
+          sort: PropTypes.string
         })
       )
     )
   ),
-  body: React.PropTypes.shape({
-    items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-    template: React.PropTypes.arrayOf(React.PropTypes.array).isRequired
+  body: PropTypes.shape({
+    items: PropTypes.arrayOf(PropTypes.object).isRequired,
+    template: PropTypes.arrayOf(PropTypes.array).isRequired
   }),
-  total: React.PropTypes.arrayOf(React.PropTypes.array).isRequired
+  total: PropTypes.arrayOf(PropTypes.array).isRequired
 }
 
 export default Table;

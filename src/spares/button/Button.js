@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Button.css';
 
 class Button extends Component {
@@ -47,11 +48,11 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  color: React.PropTypes.string,
-  submit: React.PropTypes.bool,
-  onclick: React.PropTypes.func,
-  disabled: React.PropTypes.bool,
-  icon: React.PropTypes.string
+  color: PropTypes.string,
+  submit: PropTypes.bool,
+  onclick: PropTypes.func,
+  disabled: PropTypes.bool,
+  icon: PropTypes.string
 }
 
 

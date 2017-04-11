@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Header.css';
 
 class Header extends Component {
@@ -32,9 +33,9 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-  center: React.PropTypes.bool,
-  medium: React.PropTypes.bool,
-  small: React.PropTypes.bool
+  center: PropTypes.bool,
+  medium: PropTypes.bool,
+  small: PropTypes.bool
 };
 
 export default Header;

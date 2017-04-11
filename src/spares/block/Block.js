@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Block.css';
 
 class Block extends Component {
@@ -28,7 +29,7 @@ class Block extends Component {
 }
 
 Block.propTypes = {
-  flex: React.PropTypes.bool
+  flex: PropTypes.bool
 }
 
 export default Block;

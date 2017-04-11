@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Checkbox.css';
 
 class Checkbox extends Component {
@@ -33,15 +34,15 @@ class Checkbox extends Component {
 }
 
 Checkbox.propTypes = {
-  items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  template: React.PropTypes.shape({
-    name: React.PropTypes.string.isRequired,
-    keysInItems:  React.PropTypes.shape({
-      value: React.PropTypes.string.isRequired, // key in items
-      text: React.PropTypes.string.isRequired // key in items
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  template: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    keysInItems:  PropTypes.shape({
+      value: PropTypes.string.isRequired, // key in items
+      text: PropTypes.string.isRequired // key in items
     })
   }),
-  onchange: React.PropTypes.func.isRequired
+  onchange: PropTypes.func.isRequired
 };
 
 export default Checkbox;

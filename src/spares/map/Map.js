@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Map.css';
 
 class Map extends Component {
@@ -29,7 +30,7 @@ class Map extends Component {
 }
 
 Map.propTypes = {
-  whenMounted: React.PropTypes.func.isRequired
+  whenMounted: PropTypes.func.isRequired
 };
 
 export default Map;

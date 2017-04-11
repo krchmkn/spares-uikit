@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Modal.css';
 
 class Modal extends Component {
@@ -63,9 +64,9 @@ class Modal extends Component {
 }
 
 Modal.propTypes = {
-  header: React.PropTypes.string.isRequired,
-  closeIcon: React.PropTypes.string,
-  children: React.PropTypes.arrayOf(React.PropTypes.element).isRequired
+  header: PropTypes.string.isRequired,
+  closeIcon: PropTypes.string,
+  children: PropTypes.arrayOf(PropTypes.element).isRequired
 }
 
 export default Modal;

@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Nav.css';
 
 class NavItem extends Component {
@@ -109,19 +110,19 @@ class Nav extends Component {
 
 
 Nav.propTypes = {
-  items: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      link: React.PropTypes.string,
-      text: React.PropTypes.string.isRequired,
-      submenu: React.PropTypes.arrayOf(
-          React.PropTypes.shape({
-            link: React.PropTypes.string.isRequired,
-            text: React.PropTypes.string.isRequired
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      link: PropTypes.string,
+      text: PropTypes.string.isRequired,
+      submenu: PropTypes.arrayOf(
+          PropTypes.shape({
+            link: PropTypes.string.isRequired,
+            text: PropTypes.string.isRequired
           })
       )
     })
   ),
-  dropdownIcon: React.PropTypes.string
+  dropdownIcon: PropTypes.string
 };
 
 export default Nav;

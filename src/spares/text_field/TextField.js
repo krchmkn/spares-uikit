@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './TextField.css';
 
 class TextField extends Component {
@@ -63,12 +64,12 @@ class TextField extends Component {
 }
 
 TextField.propTypes = {
-  label: React.PropTypes.string.isRequired,
-  name: React.PropTypes.string.isRequired,
-  char_count: React.PropTypes.number,
-  message: React.PropTypes.string,
-  placeholder: React.PropTypes.string,
-  onchange: React.PropTypes.func
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  char_count: PropTypes.number,
+  message: PropTypes.string,
+  placeholder: PropTypes.string,
+  onchange: PropTypes.func
 }
 
 export default TextField;

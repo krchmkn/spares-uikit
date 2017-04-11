@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './InputField.css';
 
 class InputField extends Component {
@@ -72,13 +73,13 @@ class InputField extends Component {
 }
 
 InputField.propTypes = {
-  label: React.PropTypes.string.isRequired,
-  name: React.PropTypes.string.isRequired,
-  pattern: React.PropTypes.any.isRequired,
-  message: React.PropTypes.string.isRequired,
-  placeholder: React.PropTypes.string,
-  onchange: React.PropTypes.func,
-  type: React.PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  pattern: PropTypes.any.isRequired,
+  message: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  onchange: PropTypes.func,
+  type: PropTypes.string.isRequired
 }
 
 export default InputField;

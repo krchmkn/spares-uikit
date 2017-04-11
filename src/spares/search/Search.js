@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Search.css';
 
 class Search extends Component {
@@ -24,8 +25,8 @@ class Search extends Component {
 }
 
 Search.propTypes = {
-  placeholder: React.PropTypes.string.isRequired,
-  buttonIcon: React.PropTypes.string.isRequired
+  placeholder: PropTypes.string.isRequired,
+  buttonIcon: PropTypes.string.isRequired
 }
 
 export default Search;

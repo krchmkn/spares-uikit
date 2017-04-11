@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './ListWithImage.css';
 
 class ListWithImage extends Component {
@@ -56,17 +57,17 @@ class ListWithImage extends Component {
 }
 
 ListWithImage.propTypes = {
-  items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  template: React.PropTypes.shape({
-    header: React.PropTypes.string.isRequired,
-    pageLink: React.PropTypes.string.isRequired,
-    image: React.PropTypes.string.isRequired,
-    description: React.PropTypes.string.isRequired,
-    labels: React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        label: React.PropTypes.string.isRequired,
-        key: React.PropTypes.string.isRequired, // key in items
-        icon: React.PropTypes.string
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  template: PropTypes.shape({
+    header: PropTypes.string.isRequired,
+    pageLink: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    labels: PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        key: PropTypes.string.isRequired, // key in items
+        icon: PropTypes.string
       })
     )
   })

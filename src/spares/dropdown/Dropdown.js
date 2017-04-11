@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Dropdown.css';
 
 class Dropdown extends Component {
@@ -66,11 +67,11 @@ class Dropdown extends Component {
 }
 
 Dropdown.propTypes = {
-  children: React.PropTypes.element.isRequired,
-  items: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      text: React.PropTypes.string,
-      onclick: React.PropTypes.func
+  children: PropTypes.element.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string,
+      onclick: PropTypes.func
     })
   )
 };

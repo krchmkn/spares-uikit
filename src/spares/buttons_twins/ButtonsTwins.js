@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './ButtonsTwins.css';
 
 class ButtonsTwins extends Component {
@@ -43,10 +44,10 @@ class ButtonsTwins extends Component {
 }
 
 ButtonsTwins.propTypes = {
-  items: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      text: React.PropTypes.string.isRequired,
-      onclick: React.PropTypes.func.isRequired
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      onclick: PropTypes.func.isRequired
     })
   )
 };

@@ -7,6 +7,7 @@
 */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Accordion.css';
 
 class AccordionItem extends Component {
@@ -73,14 +74,14 @@ class Accordion extends Component {
 }
 
 Accordion.propTypes = {
-  items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
-  template: React.PropTypes.shape({
-    header: React.PropTypes.string.isRequired, // key in items
-    body: React.PropTypes.string.isRequired // key in items
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  template: PropTypes.shape({
+    header: PropTypes.string.isRequired, // key in items
+    body: PropTypes.string.isRequired // key in items
   }),
-  icons:  React.PropTypes.shape({
-    open: React.PropTypes.string,
-    close: React.PropTypes.string
+  icons:  PropTypes.shape({
+    open: PropTypes.string,
+    close: PropTypes.string
   })
 }
 
