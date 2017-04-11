@@ -5,7 +5,7 @@
 </p>
 <p align="center">
    <img alt="build status" src="https://travis-ci.org/korchemkin/spares-uikit.svg?branch=master">
-   <img alt="npm version" src="https://badge.fury.io/js/spares-uikit.svg?04-04)](https://badge.fury.io/js/spares-uikit?07-04">
+   <img alt="npm version" src="https://badge.fury.io/js/spares-uikit.svg?11-04)](https://badge.fury.io/js/spares-uikit?11-04">
 </p>
 
 ### Demo
