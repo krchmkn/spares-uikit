@@ -8,6 +8,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import './Accordion.css';
 
 class AccordionItem extends Component {
@@ -50,7 +51,7 @@ class AccordionItem extends Component {
         </div>
         {this.state.open ? (
           <div className="spares-accordion-body">
-            {this.props.item[this.props.template.body]}
+            <ReactMarkdown source={this.props.item[this.props.template.body]} />
           </div>
         ) : null}
       </li>

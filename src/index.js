@@ -22,12 +22,12 @@ import logo from '../logo/spares-uikit-logo.svg';
 const listItems = [{
     id: 1,
     name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: '**Lorem** ipsum dolor sit amet, <br> consectetur adipiscing elit,\n sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     address: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
   }, {
     id: 2,
     name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: '_Lorem ipsum_ dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     address: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
 }];
 
@@ -123,7 +123,6 @@ const tableItems = [{
 
 ReactDOM.render(
   <div>
-
     <a href="#pageHeader" className="spares-demo-to-menu"
     title="to menu">
       <i className="icon ion-arrow-up-a"></i>Menu
