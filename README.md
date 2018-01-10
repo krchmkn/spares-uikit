@@ -10,7 +10,7 @@
 
 ### Demo
 
-[Spares-uikit demo page](https://korchemkin.github.io/spares-uikit/build/)
+[Spares-uikit demo page](https://dmitrikorchemkin.com/spares-uikit/build/)
 
 ### Installation
 
