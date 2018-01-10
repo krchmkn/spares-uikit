@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/korchemkin/spares-uikit/issues"
   },
-  "homepage": "https://korchemkin.github.io/spares-uikit/build",
+  "homepage": "https://dmitrikorchemkin.com/spares-uikit/build/",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-transform-react-jsx": "^6.24.1",
