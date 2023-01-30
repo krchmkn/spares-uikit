@@ -10,7 +10,7 @@
 
 ### Demo
 
-[Spares-uikit demo page](https://solrojo.github.io/spares-uikit/build/)
+[Spares-uikit demo page](https://kda.name/spares-uikit/build/)
 
 ### Installation
 
@@ -20,12 +20,12 @@ npm install spares-uikit --save
 
 ### Usage
 
-For information on use see project [wiki](https://github.com/solrojo/spares-uikit/wiki)
+For information on use see project [wiki](https://github.com/krchmkn/spares-uikit/wiki)
 
 ### Contributing
 
-[See guide](https://github.com/solrojo/spares-uikit/blob/master/CONTRIBUTING.md)
+[See guide](https://github.com/krchmkn/spares-uikit/blob/master/CONTRIBUTING.md)
 
 ### License
 
-[MIT](https://github.com/solrojo/spares-uikit/wiki/License)
+[MIT](https://github.com/krchmkn/spares-uikit/wiki/License)
